@@ -8,7 +8,7 @@ img {
 
 body {
   margin: 0 auto;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   background-color: black;
   color: #ffffff; }
 
@@ -34,38 +34,138 @@ p {
   z-index: 99999;
   top: 0;
   background-color: black; }
-  .menubar .menu-item {
+  @media (max-width: 768px) {
+    .menubar {
+      display: none; } }
+  .menubar .logo-and-menubar {
+    display: flex;
+    justify-content: space-between; }
+    .menubar .logo-and-menubar .logo-of-ravi img {
+      width: 70px;
+      height: 70px; }
+    .menubar .logo-and-menubar .menu-item {
+      list-style: none;
+      float: right; }
+      .menubar .logo-and-menubar .menu-item li {
+        display: inline-block; }
+        .menubar .logo-and-menubar .menu-item li a {
+          text-decoration: none;
+          color: #ffffff;
+          padding: 10px 13px;
+          transition: 0.6s ease-in; }
+          @media (max-width: 768px) {
+            .menubar .logo-and-menubar .menu-item li a {
+              padding: 10px 7px; } }
+          .menubar .logo-and-menubar .menu-item li a:hover {
+            color: #fdc11b;
+            text-decoration: underline; }
+
+.menu {
+  background: #000000;
+  width: 100%;
+  display: none; }
+  .menu ul {
     list-style: none;
-    float: right; }
-    .menubar .menu-item li {
-      display: inline-block; }
-      .menubar .menu-item li a {
-        text-decoration: none;
+    margin: 0;
+    padding: 0;
+    text-align: center; }
+    .menu ul a {
+      text-decoration: none;
+      color: #ffffff; }
+      .menu ul a li {
         color: #ffffff;
-        padding: 10px 13px;
-        transition: 0.6s ease-in; }
-        .menubar .menu-item li a:hover {
-          color: #fdc11b;
-          text-decoration: underline; }
+        font-size: 12px;
+        letter-spacing: 2px;
+        padding: 15px 0;
+        text-transform: uppercase; }
+        .menu ul a li:hover {
+          background: #fdc11b; }
+
+.menu-toggle {
+  background: none;
+  color: #333;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 25px;
+  display: none; }
+  @media (max-width: 768px) {
+    .menu-toggle {
+      display: block; } }
+  .menu-toggle a {
+    text-decoration: none;
+    color: #333; }
+    .menu-toggle a i {
+      color: #dea21a;
+      font-size: 50px; }
 
 .hero-part {
   padding-bottom: 50px; }
   .hero-part .author-detail {
     display: flex;
     justify-content: space-between; }
+    @media (max-width: 425px) {
+      .hero-part .author-detail {
+        flex-direction: column-reverse; } }
     .hero-part .author-detail .hero-part-text {
-      padding-top: 120px;
-      padding-left: 120px; }
+      padding-top: 200px;
+      padding-left: 150px; }
+      @media (max-width: 768px) {
+        .hero-part .author-detail .hero-part-text {
+          padding-top: 150px;
+          padding-left: 100px; } }
+      @media (max-width: 650px) {
+        .hero-part .author-detail .hero-part-text {
+          padding-top: 120px; } }
+      @media (max-width: 650px) {
+        .hero-part .author-detail .hero-part-text {
+          padding-top: 70px;
+          padding-left: 50px; } }
       .hero-part .author-detail .hero-part-text .welcome-text p {
         color: #fdc11b; }
       .hero-part .author-detail .hero-part-text .Author-text h1 {
         font-size: 70px; }
+        @media (max-width: 991px) {
+          .hero-part .author-detail .hero-part-text .Author-text h1 {
+            font-size: 64px; } }
+        @media (max-width: 768px) {
+          .hero-part .author-detail .hero-part-text .Author-text h1 {
+            font-size: 56px; } }
+        @media (max-width: 650px) {
+          .hero-part .author-detail .hero-part-text .Author-text h1 {
+            font-size: 40px; } }
+        @media (max-width: 550px) {
+          .hero-part .author-detail .hero-part-text .Author-text h1 {
+            font-size: 25px; } }
         .hero-part .author-detail .hero-part-text .Author-text h1 span {
           color: #fdc11b; }
       .hero-part .author-detail .hero-part-text .about-author h3 {
         font-size: 30px; }
+        @media (max-width: 991px) {
+          .hero-part .author-detail .hero-part-text .about-author h3 {
+            font-size: 25px; } }
+        @media (max-width: 650px) {
+          .hero-part .author-detail .hero-part-text .about-author h3 {
+            font-size: 18px; } }
+        @media (max-width: 550px) {
+          .hero-part .author-detail .hero-part-text .about-author h3 {
+            font-size: 14px; } }
       .hero-part .author-detail .hero-part-text .heropart-btn {
         padding-top: 50px; }
+        @media (max-width: 991px) {
+          .hero-part .author-detail .hero-part-text .heropart-btn {
+            padding-top: 40px; } }
+        @media (max-width: 650px) {
+          .hero-part .author-detail .hero-part-text .heropart-btn {
+            padding-top: 30px; } }
+        @media (max-width: 650px) {
+          .hero-part .author-detail .hero-part-text .heropart-btn {
+            padding-top: 10px;
+            display: flex;
+            flex-direction: column; } }
+        @media (max-width: 425px) {
+          .hero-part .author-detail .hero-part-text .heropart-btn {
+            flex-direction: row; } }
         .hero-part .author-detail .hero-part-text .heropart-btn a {
           padding: 15px 15px;
           border: 1px solid white;
@@ -74,11 +174,38 @@ p {
           text-decoration: none;
           outline: none;
           transition: 0.6s ease-in; }
+          @media (max-width: 650px) {
+            .hero-part .author-detail .hero-part-text .heropart-btn a {
+              padding: 10px 10px; } }
+          @media (max-width: 550px) {
+            .hero-part .author-detail .hero-part-text .heropart-btn a {
+              padding: 5px 0;
+              width: 95px;
+              margin-top: 10px;
+              text-align: center; } }
+          @media (max-width: 425px) {
+            .hero-part .author-detail .hero-part-text .heropart-btn a {
+              margin-right: 10px; } }
           .hero-part .author-detail .hero-part-text .heropart-btn a:hover {
             background-color: #fdc11b;
             color: black; }
     .hero-part .author-detail .author-img img {
       width: 350px; }
+      @media (max-width: 991px) {
+        .hero-part .author-detail .author-img img {
+          width: 300px; } }
+      @media (max-width: 768px) {
+        .hero-part .author-detail .author-img img {
+          width: 250px; } }
+      @media (max-width: 650px) {
+        .hero-part .author-detail .author-img img {
+          width: 200px; } }
+      @media (max-width: 550px) {
+        .hero-part .author-detail .author-img img {
+          width: 150px; } }
+      @media (max-width: 425px) {
+        .hero-part .author-detail .author-img img {
+          margin: 0 auto; } }
 
 .about-me-part {
   padding-bottom: 50px; }
@@ -89,47 +216,107 @@ p {
       width: 50%;
       flex: 0 0 50%;
       margin: 0 auto; }
+      @media (max-width: 425px) {
+        .about-me-part .aboutme .ravi-img {
+          display: none; } }
       .about-me-part .aboutme .ravi-img img {
         width: 350px; }
+        @media (max-width: 991px) {
+          .about-me-part .aboutme .ravi-img img {
+            width: 300px; } }
+        @media (max-width: 768px) {
+          .about-me-part .aboutme .ravi-img img {
+            width: 250px; } }
+        @media (max-width: 650px) {
+          .about-me-part .aboutme .ravi-img img {
+            width: 200px; } }
+        @media (max-width: 550px) {
+          .about-me-part .aboutme .ravi-img img {
+            width: 150px; } }
     .about-me-part .aboutme .ravi-detail {
       width: 50%;
       flex: 0 0 50%;
       margin: 0 auto;
       position: relative; }
+      @media (max-width: 425px) {
+        .about-me-part .aboutme .ravi-detail {
+          width: 100%;
+          flex: 0 0 100%;
+          margin: 0 auto;
+          position: relative;
+          align-items: center; } }
       .about-me-part .aboutme .ravi-detail h2 {
         position: absolute;
         font-size: 7vw;
         color: rgba(255, 255, 255, 0.1);
         z-index: -1;
-        font-weight: 900; }
-        @media (max-width: 1024) {
+        font-weight: 900;
+        padding-top: 120px; }
+        @media (max-width: 768px) {
           .about-me-part .aboutme .ravi-detail h2 {
             display: none; } }
       .about-me-part .aboutme .ravi-detail h3 {
         font-size: 50px;
         font-weight: 700;
-        padding-bottom: 40px; }
+        padding-bottom: 150px;
+        padding-top: 120px; }
+        @media (max-width: 768px) {
+          .about-me-part .aboutme .ravi-detail h3 {
+            padding-bottom: 40px; } }
+        @media (max-width: 650px) {
+          .about-me-part .aboutme .ravi-detail h3 {
+            font-size: 40px;
+            padding: 40px 0; } }
+        @media (max-width: 550px) {
+          .about-me-part .aboutme .ravi-detail h3 {
+            font-size: 36px;
+            padding: 20px 0; } }
+        @media (max-width: 425px) {
+          .about-me-part .aboutme .ravi-detail h3 {
+            text-align: center; } }
       .about-me-part .aboutme .ravi-detail .slogan-text {
         color: #999999;
         padding-bottom: 50px;
         font-size: 16px; }
       .about-me-part .aboutme .ravi-detail .about-ravi {
         display: flex; }
+        @media (max-width: 425px) {
+          .about-me-part .aboutme .ravi-detail .about-ravi {
+            text-align: left;
+            padding-left: 50px; } }
         .about-me-part .aboutme .ravi-detail .about-ravi .property {
           width: 130px;
           height: 30px;
           font-weight: 700; }
+          @media (max-width: 550px) {
+            .about-me-part .aboutme .ravi-detail .about-ravi .property {
+              width: 110px;
+              height: 25px; } }
         .about-me-part .aboutme .ravi-detail .about-ravi .value {
           color: #999999;
           font-size: 16px; }
       .about-me-part .aboutme .ravi-detail .about-projects .total-project {
-        padding-top: 30px;
+        padding-top: 25px;
         font-weight: 700;
-        font-size: 25px; }
+        font-size: 18px; }
+        @media (max-width: 550px) {
+          .about-me-part .aboutme .ravi-detail .about-projects .total-project {
+            padding-top: 15px; } }
+        @media (max-width: 425px) {
+          .about-me-part .aboutme .ravi-detail .about-projects .total-project {
+            padding-left: 50px; } }
         .about-me-part .aboutme .ravi-detail .about-projects .total-project .number {
           color: #fdc11b; }
       .about-me-part .aboutme .ravi-detail .download-resume {
         padding-top: 50px; }
+        @media (max-width: 550px) {
+          .about-me-part .aboutme .ravi-detail .download-resume {
+            padding-top: 20px; } }
+        @media (max-width: 425px) {
+          .about-me-part .aboutme .ravi-detail .download-resume {
+            padding-top: 40px;
+            width: 100%;
+            text-align: center; } }
         .about-me-part .aboutme .ravi-detail .download-resume a {
           text-decoration: none;
           color: white;
@@ -138,16 +325,19 @@ p {
           border-radius: 50px;
           outline: none;
           transition: 0.5s ease-in; }
+          @media (max-width: 650px) {
+            .about-me-part .aboutme .ravi-detail .download-resume a {
+              padding: 10px 10px; } }
           .about-me-part .aboutme .ravi-detail .download-resume a:hover {
             background-color: #fdc11b;
             color: black; }
 
-.Resume-part {
-  padding-bottom: 50px; }
-  .Resume-part .resume-text {
+.resume-part {
+  padding-bottom: 100px; }
+  .resume-part .resume-text {
     text-align: center;
     position: relative; }
-    .Resume-part .resume-text h2 {
+    .resume-part .resume-text h2 {
       position: absolute;
       top: 0px;
       left: 0;
@@ -156,41 +346,579 @@ p {
       z-index: -1;
       font-weight: 900;
       width: 100%; }
-    .Resume-part .resume-text h3 {
+      @media (max-width: 768px) {
+        .resume-part .resume-text h2 {
+          display: none; } }
+    .resume-part .resume-text h3 {
       font-size: 50px;
       font-weight: 700;
-      padding-bottom: 150px; }
-    .Resume-part .resume-text .resume-content {
-      padding-top: 30px;
-      padding-bottom: 50px;
-      color: #999999; }
-  .Resume-part .year-progress {
+      padding-bottom: 200px; }
+      @media (max-width: 768px) {
+        .resume-part .resume-text h3 {
+          padding-bottom: 0; } }
+      @media (max-width: 650px) {
+        .resume-part .resume-text h3 {
+          font-size: 40px; } }
+  @media (max-width: 991px) {
+    .resume-part .year-for-flex {
+      display: flex;
+      justify-content: space-around; } }
+  .resume-part .year-for-flex .year-wise-post {
     display: flex;
-    justify-content: space-between; }
-    .Resume-part .year-progress .year-text {
-      background: rgba(255, 255, 255, 0.1);
-      width: 49%;
-      flex: 0 0 49%;
-      padding: 30px;
-      margin-bottom: 25px; }
-      .Resume-part .year-progress .year-text .year {
-        font-weight: 900;
-        font-size: 26px;
-        color: #ffbd39;
-        line-height: 46px; }
-      .Resume-part .year-progress .year-text .company-name {
-        font-size: 26px;
-        line-height: 40px; }
-      .Resume-part .year-progress .year-text .role {
-        font-size: 12px;
-        font-weight: 600;
-        letter-spacing: 3px;
-        text-transform: uppercase;
-        line-height: 30px;
-        color: #999999; }
-      .Resume-part .year-progress .year-text .about-roll {
-        color: #999999;
-        margin-top: 20px; }
+    align-items: center;
+    margin-left: 20px;
+    margin-top: 20px; }
+    @media (max-width: 991px) {
+      .resume-part .year-for-flex .year-wise-post {
+        margin-left: 0;
+        width: 24%;
+        flex: 0 0 24%;
+        flex-direction: column; } }
+    .resume-part .year-for-flex .year-wise-post .year-button-outer {
+      position: relative;
+      height: 200px;
+      width: 200px;
+      border: 1px solid white;
+      border-radius: 200px;
+      outline: none;
+      background-color: rgba(255, 255, 255, 0.1); }
+      @media (max-width: 1110px) {
+        .resume-part .year-for-flex .year-wise-post .year-button-outer {
+          position: relative;
+          height: 150px;
+          width: 150px;
+          border-radius: 150px; } }
+      .resume-part .year-for-flex .year-wise-post .year-button-outer .year-button {
+        position: absolute;
+        height: 130px;
+        width: 130px;
+        border: 3px solid white;
+        border-radius: 130px;
+        outline: none;
+        left: 33px;
+        top: 33px;
+        background-image: linear-gradient(to right bottom, #f3a23e, #f5aa3f, #f6b241, #f7ba43, #f8c246); }
+        @media (max-width: 1110px) {
+          .resume-part .year-for-flex .year-wise-post .year-button-outer .year-button {
+            position: absolute;
+            height: 110px;
+            width: 110px;
+            border-radius: 110px;
+            left: 19px;
+            top: 19px; } }
+        .resume-part .year-for-flex .year-wise-post .year-button-outer .year-button:hover {
+          cursor: pointer;
+          background-image: linear-gradient(to right bottom, #f69217, #f09615, #ea9b16, #e49e17, #dea21a); }
+        .resume-part .year-for-flex .year-wise-post .year-button-outer .year-button p {
+          position: absolute;
+          top: 27px;
+          left: 17px;
+          text-align: center;
+          font-weight: 900;
+          font-size: 16px; }
+          @media (max-width: 1110px) {
+            .resume-part .year-for-flex .year-wise-post .year-button-outer .year-button p {
+              font-size: 14px; } }
+    .resume-part .year-for-flex .year-wise-post .animation-resume {
+      display: flex;
+      align-items: center; }
+      @media (max-width: 991px) {
+        .resume-part .year-for-flex .year-wise-post .animation-resume {
+          flex-direction: column; } }
+      .resume-part .year-for-flex .year-wise-post .animation-resume .right-arrow i {
+        font-size: 60px;
+        padding: 0 20px;
+        color: #ffbd39; }
+        @media (max-width: 1110px) {
+          .resume-part .year-for-flex .year-wise-post .animation-resume .right-arrow i {
+            font-size: 40px;
+            padding: 0 10px; } }
+        @media (max-width: 991px) {
+          .resume-part .year-for-flex .year-wise-post .animation-resume .right-arrow i {
+            padding: 15px;
+            transform: rotate(90deg); } }
+      .resume-part .year-for-flex .year-wise-post .animation-resume .detail-of-company {
+        border: 2px solid #ffbd39;
+        border-radius: 20px;
+        outline: none;
+        display: flex;
+        align-items: center; }
+        @media (max-width: 991px) {
+          .resume-part .year-for-flex .year-wise-post .animation-resume .detail-of-company {
+            flex-direction: column; } }
+        @media (max-width: 550px) {
+          .resume-part .year-for-flex .year-wise-post .animation-resume .detail-of-company {
+            width: 80%;
+            flex: 0 0 80%; } }
+        .resume-part .year-for-flex .year-wise-post .animation-resume .detail-of-company .company-detail-yearwise {
+          padding: 20px 13px;
+          width: 40%;
+          flex: 0 0 40%;
+          margin: 0 auto; }
+          @media (max-width: 1110px) {
+            .resume-part .year-for-flex .year-wise-post .animation-resume .detail-of-company .company-detail-yearwise {
+              width: 38%;
+              flex: 0 0 38%; } }
+          @media (max-width: 991px) {
+            .resume-part .year-for-flex .year-wise-post .animation-resume .detail-of-company .company-detail-yearwise {
+              width: 100%;
+              flex: 0 0 100%; } }
+          .resume-part .year-for-flex .year-wise-post .animation-resume .detail-of-company .company-detail-yearwise img {
+            background-color: #ffbd39; }
+            @media (max-width: 1110px) {
+              .resume-part .year-for-flex .year-wise-post .animation-resume .detail-of-company .company-detail-yearwise img {
+                height: 100px;
+                width: 140px; } }
+            @media (max-width: 991px) {
+              .resume-part .year-for-flex .year-wise-post .animation-resume .detail-of-company .company-detail-yearwise img {
+                width: 100%;
+                height: auto; } }
+        .resume-part .year-for-flex .year-wise-post .animation-resume .detail-of-company .logo-of-company {
+          width: 60%;
+          flex: 0 0 60%;
+          margin: 0 auto; }
+          @media (max-width: 1110px) {
+            .resume-part .year-for-flex .year-wise-post .animation-resume .detail-of-company .logo-of-company {
+              width: 62%;
+              flex: 0 0 62%; } }
+          @media (max-width: 991px) {
+            .resume-part .year-for-flex .year-wise-post .animation-resume .detail-of-company .logo-of-company {
+              width: 100%;
+              flex: 0 0 100%; } }
+          .resume-part .year-for-flex .year-wise-post .animation-resume .detail-of-company .logo-of-company h4 {
+            font-size: 18px;
+            padding: 10px 20px;
+            text-align: center; }
+            @media (max-width: 1110px) {
+              .resume-part .year-for-flex .year-wise-post .animation-resume .detail-of-company .logo-of-company h4 {
+                text-align: left; } }
+            @media (max-width: 991px) {
+              .resume-part .year-for-flex .year-wise-post .animation-resume .detail-of-company .logo-of-company h4 {
+                font-size: 16px;
+                padding: 10px; } }
+          .resume-part .year-for-flex .year-wise-post .animation-resume .detail-of-company .logo-of-company p {
+            padding: 20px;
+            color: #999999; }
+            @media (max-width: 991px) {
+              .resume-part .year-for-flex .year-wise-post .animation-resume .detail-of-company .logo-of-company p {
+                padding: 10px; } }
+  .resume-part .year-for-flex .year-wise-post2 {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    margin-top: 20px; }
+    @media (max-width: 991px) {
+      .resume-part .year-for-flex .year-wise-post2 {
+        margin-left: 0;
+        width: 24%;
+        flex: 0 0 24%;
+        flex-direction: column; } }
+    .resume-part .year-for-flex .year-wise-post2 .year-button-outer {
+      position: relative;
+      height: 200px;
+      width: 200px;
+      border: 1px solid white;
+      border-radius: 200px;
+      outline: none;
+      background-color: rgba(255, 255, 255, 0.1); }
+      @media (max-width: 1110px) {
+        .resume-part .year-for-flex .year-wise-post2 .year-button-outer {
+          position: relative;
+          height: 150px;
+          width: 150px;
+          border-radius: 150px; } }
+      .resume-part .year-for-flex .year-wise-post2 .year-button-outer .year-button {
+        position: absolute;
+        height: 130px;
+        width: 130px;
+        border: 3px solid white;
+        border-radius: 130px;
+        outline: none;
+        left: 33px;
+        top: 33px;
+        background-image: linear-gradient(to right bottom, #f3a23e, #f5aa3f, #f6b241, #f7ba43, #f8c246); }
+        @media (max-width: 1110px) {
+          .resume-part .year-for-flex .year-wise-post2 .year-button-outer .year-button {
+            position: absolute;
+            height: 110px;
+            width: 110px;
+            border-radius: 110px;
+            left: 19px;
+            top: 19px; } }
+        .resume-part .year-for-flex .year-wise-post2 .year-button-outer .year-button:hover {
+          cursor: pointer;
+          background-image: linear-gradient(to right bottom, #f69217, #f09615, #ea9b16, #e49e17, #dea21a); }
+        .resume-part .year-for-flex .year-wise-post2 .year-button-outer .year-button p {
+          position: absolute;
+          top: 27px;
+          left: 17px;
+          text-align: center;
+          font-weight: 900;
+          font-size: 16px; }
+          @media (max-width: 1110px) {
+            .resume-part .year-for-flex .year-wise-post2 .year-button-outer .year-button p {
+              font-size: 14px; } }
+    .resume-part .year-for-flex .year-wise-post2 .animation-resume {
+      display: flex;
+      align-items: center; }
+      @media (max-width: 991px) {
+        .resume-part .year-for-flex .year-wise-post2 .animation-resume {
+          flex-direction: column; } }
+      .resume-part .year-for-flex .year-wise-post2 .animation-resume .right-arrow i {
+        font-size: 60px;
+        padding: 0 20px;
+        color: #ffbd39; }
+        @media (max-width: 1110px) {
+          .resume-part .year-for-flex .year-wise-post2 .animation-resume .right-arrow i {
+            font-size: 40px;
+            padding: 0 10px; } }
+        @media (max-width: 991px) {
+          .resume-part .year-for-flex .year-wise-post2 .animation-resume .right-arrow i {
+            padding: 15px;
+            transform: rotate(90deg); } }
+      .resume-part .year-for-flex .year-wise-post2 .animation-resume .detail-of-company {
+        border: 2px solid #ffbd39;
+        border-radius: 20px;
+        outline: none;
+        display: flex;
+        align-items: center; }
+        @media (max-width: 991px) {
+          .resume-part .year-for-flex .year-wise-post2 .animation-resume .detail-of-company {
+            flex-direction: column; } }
+        @media (max-width: 550px) {
+          .resume-part .year-for-flex .year-wise-post2 .animation-resume .detail-of-company {
+            width: 80%;
+            flex: 0 0 80%; } }
+        .resume-part .year-for-flex .year-wise-post2 .animation-resume .detail-of-company .company-detail-yearwise {
+          padding: 20px 13px;
+          width: 40%;
+          flex: 0 0 40%;
+          margin: 0 auto; }
+          @media (max-width: 1110px) {
+            .resume-part .year-for-flex .year-wise-post2 .animation-resume .detail-of-company .company-detail-yearwise {
+              width: 38%;
+              flex: 0 0 38%; } }
+          @media (max-width: 991px) {
+            .resume-part .year-for-flex .year-wise-post2 .animation-resume .detail-of-company .company-detail-yearwise {
+              width: 100%;
+              flex: 0 0 100%; } }
+          .resume-part .year-for-flex .year-wise-post2 .animation-resume .detail-of-company .company-detail-yearwise img {
+            background-color: #ffbd39; }
+            @media (max-width: 1110px) {
+              .resume-part .year-for-flex .year-wise-post2 .animation-resume .detail-of-company .company-detail-yearwise img {
+                height: 100px;
+                width: 140px; } }
+            @media (max-width: 991px) {
+              .resume-part .year-for-flex .year-wise-post2 .animation-resume .detail-of-company .company-detail-yearwise img {
+                width: 100%;
+                height: auto; } }
+        .resume-part .year-for-flex .year-wise-post2 .animation-resume .detail-of-company .logo-of-company {
+          width: 60%;
+          flex: 0 0 60%;
+          margin: 0 auto; }
+          @media (max-width: 1110px) {
+            .resume-part .year-for-flex .year-wise-post2 .animation-resume .detail-of-company .logo-of-company {
+              width: 62%;
+              flex: 0 0 62%; } }
+          @media (max-width: 991px) {
+            .resume-part .year-for-flex .year-wise-post2 .animation-resume .detail-of-company .logo-of-company {
+              width: 100%;
+              flex: 0 0 100%; } }
+          .resume-part .year-for-flex .year-wise-post2 .animation-resume .detail-of-company .logo-of-company h4 {
+            font-size: 18px;
+            padding: 10px 20px;
+            text-align: center; }
+            @media (max-width: 1110px) {
+              .resume-part .year-for-flex .year-wise-post2 .animation-resume .detail-of-company .logo-of-company h4 {
+                text-align: left; } }
+            @media (max-width: 991px) {
+              .resume-part .year-for-flex .year-wise-post2 .animation-resume .detail-of-company .logo-of-company h4 {
+                padding: 10px;
+                font-size: 16px; } }
+          .resume-part .year-for-flex .year-wise-post2 .animation-resume .detail-of-company .logo-of-company p {
+            padding: 20px;
+            color: #999999; }
+            @media (max-width: 991px) {
+              .resume-part .year-for-flex .year-wise-post2 .animation-resume .detail-of-company .logo-of-company p {
+                padding: 10px; } }
+  .resume-part .year-for-flex .year-wise-post3 {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    margin-top: 20px; }
+    @media (max-width: 991px) {
+      .resume-part .year-for-flex .year-wise-post3 {
+        margin-left: 0;
+        width: 24%;
+        flex: 0 0 24%;
+        flex-direction: column; } }
+    .resume-part .year-for-flex .year-wise-post3 .year-button-outer {
+      position: relative;
+      height: 200px;
+      width: 200px;
+      border: 1px solid white;
+      border-radius: 200px;
+      outline: none;
+      background-color: rgba(255, 255, 255, 0.1); }
+      @media (max-width: 1110px) {
+        .resume-part .year-for-flex .year-wise-post3 .year-button-outer {
+          position: relative;
+          height: 150px;
+          width: 150px;
+          border-radius: 150px; } }
+      .resume-part .year-for-flex .year-wise-post3 .year-button-outer .year-button {
+        position: absolute;
+        height: 130px;
+        width: 130px;
+        border: 3px solid white;
+        border-radius: 130px;
+        outline: none;
+        left: 33px;
+        top: 33px;
+        background-image: linear-gradient(to right bottom, #f3a23e, #f5aa3f, #f6b241, #f7ba43, #f8c246); }
+        @media (max-width: 1110px) {
+          .resume-part .year-for-flex .year-wise-post3 .year-button-outer .year-button {
+            position: absolute;
+            height: 110px;
+            width: 110px;
+            border-radius: 110px;
+            left: 19px;
+            top: 19px; } }
+        .resume-part .year-for-flex .year-wise-post3 .year-button-outer .year-button:hover {
+          cursor: pointer;
+          background-image: linear-gradient(to right bottom, #f69217, #f09615, #ea9b16, #e49e17, #dea21a); }
+        .resume-part .year-for-flex .year-wise-post3 .year-button-outer .year-button p {
+          position: absolute;
+          top: 27px;
+          left: 17px;
+          text-align: center;
+          font-weight: 900;
+          font-size: 16px; }
+          @media (max-width: 1110px) {
+            .resume-part .year-for-flex .year-wise-post3 .year-button-outer .year-button p {
+              font-size: 14px; } }
+    .resume-part .year-for-flex .year-wise-post3 .animation-resume {
+      display: flex;
+      align-items: center; }
+      @media (max-width: 991px) {
+        .resume-part .year-for-flex .year-wise-post3 .animation-resume {
+          flex-direction: column; } }
+      .resume-part .year-for-flex .year-wise-post3 .animation-resume .right-arrow i {
+        font-size: 60px;
+        padding: 0 20px;
+        color: #ffbd39; }
+        @media (max-width: 1110px) {
+          .resume-part .year-for-flex .year-wise-post3 .animation-resume .right-arrow i {
+            font-size: 40px;
+            padding: 0 10px; } }
+        @media (max-width: 991px) {
+          .resume-part .year-for-flex .year-wise-post3 .animation-resume .right-arrow i {
+            padding: 15px;
+            transform: rotate(90deg); } }
+      .resume-part .year-for-flex .year-wise-post3 .animation-resume .detail-of-company {
+        border: 2px solid #ffbd39;
+        border-radius: 20px;
+        outline: none;
+        display: flex;
+        align-items: center; }
+        @media (max-width: 991px) {
+          .resume-part .year-for-flex .year-wise-post3 .animation-resume .detail-of-company {
+            flex-direction: column; } }
+        @media (max-width: 550px) {
+          .resume-part .year-for-flex .year-wise-post3 .animation-resume .detail-of-company {
+            width: 80%;
+            flex: 0 0 80%; } }
+        .resume-part .year-for-flex .year-wise-post3 .animation-resume .detail-of-company .company-detail-yearwise {
+          padding: 20px 13px;
+          width: 40%;
+          flex: 0 0 40%;
+          margin: 0 auto; }
+          @media (max-width: 1110px) {
+            .resume-part .year-for-flex .year-wise-post3 .animation-resume .detail-of-company .company-detail-yearwise {
+              width: 38%;
+              flex: 0 0 38%; } }
+          @media (max-width: 991px) {
+            .resume-part .year-for-flex .year-wise-post3 .animation-resume .detail-of-company .company-detail-yearwise {
+              width: 100%;
+              flex: 0 0 100%; } }
+          .resume-part .year-for-flex .year-wise-post3 .animation-resume .detail-of-company .company-detail-yearwise img {
+            background-color: #ffbd39; }
+            @media (max-width: 1110px) {
+              .resume-part .year-for-flex .year-wise-post3 .animation-resume .detail-of-company .company-detail-yearwise img {
+                height: 100px;
+                width: 140px; } }
+            @media (max-width: 991px) {
+              .resume-part .year-for-flex .year-wise-post3 .animation-resume .detail-of-company .company-detail-yearwise img {
+                width: 100%;
+                height: auto; } }
+        .resume-part .year-for-flex .year-wise-post3 .animation-resume .detail-of-company .logo-of-company {
+          width: 60%;
+          flex: 0 0 60%;
+          margin: 0 auto; }
+          @media (max-width: 1110px) {
+            .resume-part .year-for-flex .year-wise-post3 .animation-resume .detail-of-company .logo-of-company {
+              width: 62%;
+              flex: 0 0 62%; } }
+          @media (max-width: 991px) {
+            .resume-part .year-for-flex .year-wise-post3 .animation-resume .detail-of-company .logo-of-company {
+              width: 100%;
+              flex: 0 0 100%; } }
+          .resume-part .year-for-flex .year-wise-post3 .animation-resume .detail-of-company .logo-of-company h4 {
+            font-size: 18px;
+            padding: 10px 20px;
+            text-align: center; }
+            @media (max-width: 1110px) {
+              .resume-part .year-for-flex .year-wise-post3 .animation-resume .detail-of-company .logo-of-company h4 {
+                text-align: left; } }
+            @media (max-width: 991px) {
+              .resume-part .year-for-flex .year-wise-post3 .animation-resume .detail-of-company .logo-of-company h4 {
+                padding: 10px;
+                font-size: 16px; } }
+          .resume-part .year-for-flex .year-wise-post3 .animation-resume .detail-of-company .logo-of-company p {
+            padding: 20px;
+            color: #999999; }
+            @media (max-width: 991px) {
+              .resume-part .year-for-flex .year-wise-post3 .animation-resume .detail-of-company .logo-of-company p {
+                padding: 10px; } }
+  .resume-part .year-for-flex .year-wise-post4 {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    margin-top: 20px; }
+    @media (max-width: 991px) {
+      .resume-part .year-for-flex .year-wise-post4 {
+        margin-left: 0;
+        width: 24%;
+        flex: 0 0 24%;
+        flex-direction: column; } }
+    .resume-part .year-for-flex .year-wise-post4 .year-button-outer {
+      position: relative;
+      height: 200px;
+      width: 200px;
+      border: 1px solid white;
+      border-radius: 200px;
+      outline: none;
+      background-color: rgba(255, 255, 255, 0.1); }
+      @media (max-width: 1110px) {
+        .resume-part .year-for-flex .year-wise-post4 .year-button-outer {
+          position: relative;
+          height: 150px;
+          width: 150px;
+          border-radius: 150px; } }
+      .resume-part .year-for-flex .year-wise-post4 .year-button-outer .year-button {
+        position: absolute;
+        height: 130px;
+        width: 130px;
+        border: 3px solid white;
+        border-radius: 130px;
+        outline: none;
+        left: 33px;
+        top: 33px;
+        background-image: linear-gradient(to right bottom, #f3a23e, #f5aa3f, #f6b241, #f7ba43, #f8c246); }
+        @media (max-width: 1110px) {
+          .resume-part .year-for-flex .year-wise-post4 .year-button-outer .year-button {
+            position: absolute;
+            height: 110px;
+            width: 110px;
+            border-radius: 110px;
+            left: 19px;
+            top: 19px; } }
+        .resume-part .year-for-flex .year-wise-post4 .year-button-outer .year-button:hover {
+          cursor: pointer;
+          background-image: linear-gradient(to right bottom, #f69217, #f09615, #ea9b16, #e49e17, #dea21a); }
+        .resume-part .year-for-flex .year-wise-post4 .year-button-outer .year-button p {
+          position: absolute;
+          top: 27px;
+          left: 17px;
+          text-align: center;
+          font-weight: 900;
+          font-size: 16px; }
+          @media (max-width: 1110px) {
+            .resume-part .year-for-flex .year-wise-post4 .year-button-outer .year-button p {
+              font-size: 14px; } }
+    .resume-part .year-for-flex .year-wise-post4 .animation-resume {
+      display: flex;
+      align-items: center; }
+      @media (max-width: 991px) {
+        .resume-part .year-for-flex .year-wise-post4 .animation-resume {
+          flex-direction: column; } }
+      .resume-part .year-for-flex .year-wise-post4 .animation-resume .right-arrow i {
+        font-size: 60px;
+        padding: 0 20px;
+        color: #ffbd39; }
+        @media (max-width: 1110px) {
+          .resume-part .year-for-flex .year-wise-post4 .animation-resume .right-arrow i {
+            font-size: 40px;
+            padding: 0 10px; } }
+        @media (max-width: 991px) {
+          .resume-part .year-for-flex .year-wise-post4 .animation-resume .right-arrow i {
+            padding: 15px;
+            transform: rotate(90deg); } }
+      .resume-part .year-for-flex .year-wise-post4 .animation-resume .detail-of-company {
+        border: 2px solid #ffbd39;
+        border-radius: 20px;
+        outline: none;
+        display: flex;
+        align-items: center; }
+        @media (max-width: 991px) {
+          .resume-part .year-for-flex .year-wise-post4 .animation-resume .detail-of-company {
+            flex-direction: column; } }
+        @media (max-width: 550px) {
+          .resume-part .year-for-flex .year-wise-post4 .animation-resume .detail-of-company {
+            width: 80%;
+            flex: 0 0 80%; } }
+        .resume-part .year-for-flex .year-wise-post4 .animation-resume .detail-of-company .company-detail-yearwise {
+          padding: 20px 13px;
+          width: 40%;
+          flex: 0 0 40%;
+          margin: 0 auto; }
+          @media (max-width: 1110px) {
+            .resume-part .year-for-flex .year-wise-post4 .animation-resume .detail-of-company .company-detail-yearwise {
+              width: 38%;
+              flex: 0 0 38%; } }
+          @media (max-width: 991px) {
+            .resume-part .year-for-flex .year-wise-post4 .animation-resume .detail-of-company .company-detail-yearwise {
+              width: 100%;
+              flex: 0 0 100%; } }
+          .resume-part .year-for-flex .year-wise-post4 .animation-resume .detail-of-company .company-detail-yearwise img {
+            background-color: #ffbd39; }
+            @media (max-width: 1110px) {
+              .resume-part .year-for-flex .year-wise-post4 .animation-resume .detail-of-company .company-detail-yearwise img {
+                height: 100px;
+                width: 140px; } }
+            @media (max-width: 991px) {
+              .resume-part .year-for-flex .year-wise-post4 .animation-resume .detail-of-company .company-detail-yearwise img {
+                width: 100%;
+                height: auto; } }
+        .resume-part .year-for-flex .year-wise-post4 .animation-resume .detail-of-company .logo-of-company {
+          width: 60%;
+          flex: 0 0 60%;
+          margin: 0 auto; }
+          @media (max-width: 1110px) {
+            .resume-part .year-for-flex .year-wise-post4 .animation-resume .detail-of-company .logo-of-company {
+              width: 62%;
+              flex: 0 0 62%; } }
+          @media (max-width: 991px) {
+            .resume-part .year-for-flex .year-wise-post4 .animation-resume .detail-of-company .logo-of-company {
+              width: 100%;
+              flex: 0 0 100%; } }
+          .resume-part .year-for-flex .year-wise-post4 .animation-resume .detail-of-company .logo-of-company h4 {
+            font-size: 18px;
+            padding: 10px 20px;
+            text-align: center; }
+            @media (max-width: 1110px) {
+              .resume-part .year-for-flex .year-wise-post4 .animation-resume .detail-of-company .logo-of-company h4 {
+                text-align: left; } }
+            @media (max-width: 991px) {
+              .resume-part .year-for-flex .year-wise-post4 .animation-resume .detail-of-company .logo-of-company h4 {
+                padding: 10px;
+                font-size: 16px; } }
+          .resume-part .year-for-flex .year-wise-post4 .animation-resume .detail-of-company .logo-of-company p {
+            padding: 20px;
+            color: #999999; }
+            @media (max-width: 991px) {
+              .resume-part .year-for-flex .year-wise-post4 .animation-resume .detail-of-company .logo-of-company p {
+                padding: 10px; } }
 
 .education {
   padding-bottom: 50px; }
@@ -206,12 +934,26 @@ p {
       z-index: -1;
       font-weight: 900;
       width: 100%; }
+      @media (max-width: 768px) {
+        .education .education-heading h2 {
+          display: none; } }
     .education .education-heading h3 {
       font-size: 50px;
       font-weight: 700;
       padding-bottom: 50px; }
+      @media (max-width: 650px) {
+        .education .education-heading h3 {
+          font-size: 40px;
+          padding-bottom: 90px; } }
+      @media (max-width: 550px) {
+        .education .education-heading h3 {
+          padding-top: 0; } }
   .education .education-table {
-    padding-top: 90px; }
+    padding-top: 90px;
+    overflow-x: auto; }
+    @media (max-width: 550px) {
+      .education .education-table {
+        padding-top: 0; } }
     .education .education-table table {
       width: 100%;
       border: 5px solid #ffbd39;
@@ -222,11 +964,17 @@ p {
         border-collapse: collapse;
         padding: 10px;
         font-size: 30px; }
+        @media (max-width: 550px) {
+          .education .education-table table tr th {
+            font-size: 18px; } }
       .education .education-table table tr td {
         border: 5px solid #ffbd39;
         border-collapse: collapse;
         padding: 10px;
         font-size: 18px; }
+        @media (max-width: 550px) {
+          .education .education-table table tr td {
+            font-size: 14px; } }
 
 .service-part .service-text {
   position: relative;
@@ -241,9 +989,15 @@ p {
     z-index: -1;
     font-weight: 900;
     width: 100%; }
+    @media (max-width: 768px) {
+      .service-part .service-text h2 {
+        display: none; } }
   .service-part .service-text h3 {
     font-size: 50px;
     font-weight: 700; }
+    @media (max-width: 650px) {
+      .service-part .service-text h3 {
+        font-size: 40px; } }
   .service-part .service-text p {
     padding-top: 25px;
     color: #999999; }
@@ -253,12 +1007,23 @@ p {
   justify-content: space-between;
   padding-top: 150px;
   padding-bottom: 50px; }
+  @media (max-width: 768px) {
+    .all-services {
+      flex-direction: column;
+      padding-top: 100px; } }
+  @media (max-width: 550px) {
+    .all-services {
+      padding-top: 0; } }
   .all-services .list-of-service {
     width: 23%;
     flex: 0 0 23%;
     margin: 0 auto;
-    background: rgba(255, 255, 255, 0.1);
-    padding: 50px; }
+    background: rgba(255, 255, 255, 0.1); }
+    @media (max-width: 768px) {
+      .all-services .list-of-service {
+        width: 60%;
+        flex: 0 0 60%;
+        margin: 10px auto; } }
     .all-services .list-of-service:hover {
       background-color: black;
       border: 1px solid #ffbd39;
@@ -267,13 +1032,16 @@ p {
       transition: 0.5s; }
     .all-services .list-of-service .logo-of-service img {
       width: auto;
-      margin: 0 auto; }
+      margin: 0 auto;
+      padding-top: 30px; }
   .all-services .text-of-service h3 {
     padding-top: 40px;
     text-align: center; }
-  .all-services .text-of-service hr {
+  .all-services .text-of-service .hr-lines {
+    background-color: #ffffff;
+    height: 1px;
     width: 30px;
-    text-align: center; }
+    margin: 30px auto; }
 
 .skill-part {
   padding-bottom: 50px; }
@@ -289,9 +1057,15 @@ p {
       z-index: -1;
       font-weight: 900;
       width: 100%; }
+      @media (max-width: 768px) {
+        .skill-part .skill-text h2 {
+          display: none; } }
     .skill-part .skill-text h3 {
       font-size: 50px;
       font-weight: 700; }
+      @media (max-width: 650px) {
+        .skill-part .skill-text h3 {
+          font-size: 40px; } }
 
 .skill-slider {
   display: flex;
@@ -300,7 +1074,11 @@ p {
     width: 33%;
     flex: 0 0 33%;
     margin: 25px auto;
-    padding: 20px 70px; }
+    padding: 20px 70px;
+    outline: none; }
+    @media (max-width: 991px) {
+      .skill-slider .slide-to-show {
+        padding: 20px 58px; } }
     .skill-slider .slide-to-show h3 {
       font-size: 26px;
       color: #ffbd39;
@@ -318,7 +1096,7 @@ p {
         margin-bottom: 15px;
         padding-left: 45px; }
         .skill-slider .slide-to-show ul li:before {
-          content: '\261E';
+          content: "\261E";
           position: absolute;
           left: 0;
           font-size: 30px;
@@ -337,6 +1115,15 @@ button.slick-next.slick-arrow {
   outline: none;
   height: 50px;
   width: 50px; }
+  @media (max-width: 768px) {
+    button.slick-next.slick-arrow {
+      top: 35%; } }
+  @media (max-width: 425px) {
+    button.slick-next.slick-arrow {
+      top: 30%; } }
+  @media (max-width: 320px) {
+    button.slick-next.slick-arrow {
+      top: 13%; } }
 
 button.slick-prev.slick-arrow {
   position: absolute;
@@ -353,222 +1140,130 @@ button.slick-prev.slick-arrow {
   transform: rotate(180deg);
   height: 50px;
   width: 50px; }
+  @media (max-width: 768px) {
+    button.slick-prev.slick-arrow {
+      top: 35%; } }
+  @media (max-width: 425px) {
+    button.slick-prev.slick-arrow {
+      top: 30%; } }
+  @media (max-width: 320px) {
+    button.slick-prev.slick-arrow {
+      top: 13%; } }
 
 button.slick-next.slick-arrow:after {
-  content: '\27A4';
-  font-size: 24px; }
+  content: "\27A4";
+  font-size: 24px;
+  padding: 10px; }
 
 button.slick-prev.slick-arrow:after {
-  content: '\27A4';
-  font-size: 24px; }
+  content: "\27A4";
+  font-size: 24px;
+  padding: 10px; }
 
 .slick-slider {
   margin-top: 150px; }
+  @media (max-width: 768px) {
+    .slick-slider {
+      margin-top: 100px; } }
+  @media (max-width: 550px) {
+    .slick-slider {
+      margin-top: 50px; } }
 
-.slick-active.slick-center {
-  background-color: rgba(255, 255, 255, 0.1);
-  transform: scale(1.1);
-  transition: 0.5s;
-  border: 1px solid #ffbd39; }
-
+@media (min-width: 769px) {
+  .slick-active.slick-center {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: scale(1.1);
+    transition: 0.5s;
+    border: 1px solid #ffbd39; } }
 .project-part {
   padding-bottom: 50px; }
-  .project-part .project-text {
+  .project-part .project-texts {
     position: relative;
     text-align: center; }
-    .project-part .project-text h2 {
+    .project-part .project-texts h2 {
       position: absolute;
-      top: 20px;
+      top: 10px;
       left: 0;
       font-size: 7vw;
       color: rgba(255, 255, 255, 0.1);
       z-index: -1;
       font-weight: 900;
       width: 100%; }
-    .project-part .project-text h3 {
+      @media (max-width: 768px) {
+        .project-part .project-texts h2 {
+          display: none; } }
+    .project-part .project-texts h3 {
       font-size: 50px;
       font-weight: 700;
-      padding-bottom: 200px; }
-  .project-part .project-detail {
+      padding-bottom: 130px; }
+      @media (max-width: 650px) {
+        .project-part .project-texts h3 {
+          font-size: 40px;
+          padding-bottom: 90px; } }
+  .project-part .project-side-by-side {
     display: flex;
-    justify-content: space-between;
-    padding-bottom: 25px; }
-    .project-part .project-detail .project-img {
-      background-image: url(../Image/p1.png);
-      background-size: cover;
-      background-repeat: no-repeat;
-      width: 49%;
-      flex: 0 0 49%;
-      position: relative; }
-      .project-part .project-detail .project-img .overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        content: '';
-        opacity: 0;
-        background: #ffbd39;
-        z-index: -1;
-        transition: 0.3s; }
-      .project-part .project-detail .project-img .overlay-text {
-        max-width: 80%;
-        padding: 130px;
-        margin: 0 auto;
-        z-index: 1;
-        opacity: 0; }
-        .project-part .project-detail .project-img .overlay-text h4 {
-          font-size: 30px;
-          font-weight: 900; }
-        .project-part .project-detail .project-img .overlay-text p {
-          font-size: 16px;
-          font-weight: 500;
-          text-align: center; }
-      .project-part .project-detail .project-img:hover .overlay {
-        opacity: 0.9;
-        z-index: 1;
-        cursor: pointer; }
-      .project-part .project-detail .project-img:hover .overlay-text {
-        opacity: 0.9;
-        position: absolute;
-        opacity: 0.9;
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        padding: 0; }
-    .project-part .project-detail .project-img1 {
-      background-image: url(../Image/p2.png);
-      background-size: cover;
-      background-repeat: no-repeat;
-      width: 49%;
-      flex: 0 0 49%;
-      position: relative; }
-      .project-part .project-detail .project-img1 .overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        content: '';
-        opacity: 0;
-        background: #ffbd39;
-        z-index: -1;
-        transition: all 0.3s ease; }
-      .project-part .project-detail .project-img1 .overlay-text {
-        max-width: 80%;
-        padding: 130px;
-        margin: 0 auto;
-        z-index: 1;
-        opacity: 0; }
-        .project-part .project-detail .project-img1 .overlay-text h4 {
-          font-size: 30px;
-          font-weight: 900; }
-        .project-part .project-detail .project-img1 .overlay-text p {
-          font-size: 16px;
-          font-weight: 500;
-          text-align: center; }
-      .project-part .project-detail .project-img1:hover .overlay {
-        opacity: 0.9;
-        z-index: 1;
-        cursor: pointer; }
-      .project-part .project-detail .project-img1:hover .overlay-text {
-        opacity: 0.9;
-        position: absolute;
-        opacity: 0.9;
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        padding: 0; }
-    .project-part .project-detail .project-img2 {
-      background-image: url(../Image/p3.png);
-      background-size: cover;
-      background-repeat: no-repeat;
-      width: 49%;
-      flex: 0 0 49%;
-      position: relative; }
-      .project-part .project-detail .project-img2 .overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        content: '';
-        opacity: 0;
-        background: #ffbd39;
-        z-index: -1;
-        transition: all 0.3s ease; }
-      .project-part .project-detail .project-img2 .overlay-text {
-        max-width: 80%;
-        padding: 130px;
-        margin: 0 auto;
-        z-index: 1;
-        opacity: 0; }
-        .project-part .project-detail .project-img2 .overlay-text h4 {
-          font-size: 30px;
-          font-weight: 900; }
-        .project-part .project-detail .project-img2 .overlay-text p {
-          font-size: 16px;
-          font-weight: 500;
-          text-align: center; }
-      .project-part .project-detail .project-img2:hover .overlay {
-        opacity: 0.9;
-        z-index: 1;
-        cursor: pointer; }
-      .project-part .project-detail .project-img2:hover .overlay-text {
-        opacity: 0.9;
-        position: absolute;
-        opacity: 0.9;
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        padding: 0; }
-    .project-part .project-detail .project-img3 {
-      background-image: url(../Image/p4.png);
-      background-size: cover;
-      background-repeat: no-repeat;
-      width: 49%;
-      flex: 0 0 49%;
-      position: relative; }
-      .project-part .project-detail .project-img3 .overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        content: '';
-        opacity: 0;
-        background: #ffbd39;
-        z-index: -1;
-        transition: all 0.3s ease; }
-      .project-part .project-detail .project-img3 .overlay-text {
-        max-width: 80%;
-        padding: 130px;
-        margin: 0 auto;
-        z-index: 1;
-        opacity: 0; }
-        .project-part .project-detail .project-img3 .overlay-text h4 {
-          font-size: 30px;
-          font-weight: 900; }
-        .project-part .project-detail .project-img3 .overlay-text p {
-          font-size: 16px;
-          font-weight: 500;
-          text-align: center; }
-      .project-part .project-detail .project-img3:hover .overlay {
-        opacity: 0.9;
-        z-index: 1;
-        cursor: pointer; }
-      .project-part .project-detail .project-img3:hover .overlay-text {
-        opacity: 0.9;
-        position: absolute;
-        opacity: 0.9;
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        padding: 0; }
+    justify-content: space-between; }
+    @media (max-width: 768px) {
+      .project-part .project-side-by-side {
+        flex-direction: column; } }
+    .project-part .project-side-by-side .project-img-text {
+      width: 50%;
+      flex: 0 0 50%; }
+      @media (max-width: 768px) {
+        .project-part .project-side-by-side .project-img-text {
+          width: 100%;
+          flex: 0 0 100%; } }
+      .project-part .project-side-by-side .project-img-text .project-img {
+        margin: 10px;
+        position: relative; }
+        .project-part .project-side-by-side .project-img-text .project-img:hover .overlay-text,
+        .project-part .project-side-by-side .project-img-text .project-img:hover .overlay {
+          opacity: 0.9; }
+        .project-part .project-side-by-side .project-img-text .project-img .overlay {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          content: "";
+          opacity: 0;
+          background: #ffbd39;
+          z-index: 1;
+          transition: 0.5s all; }
+        .project-part .project-side-by-side .project-img-text .project-img .overlay-text {
+          margin: 0 auto;
+          z-index: 2;
+          position: absolute;
+          top: 45%;
+          left: 25%;
+          opacity: 0;
+          transition: 0.5s all; }
+          @media screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+            .project-part .project-side-by-side .project-img-text .project-img .overlay-text {
+              top: 42%;
+              left: 20%; } }
+          @media (max-width: 550px) {
+            .project-part .project-side-by-side .project-img-text .project-img .overlay-text {
+              top: 40%;
+              left: 20%; } }
+          @media (max-width: 320px) {
+            .project-part .project-side-by-side .project-img-text .project-img .overlay-text {
+              top: 35%;
+              left: 10%; } }
+          .project-part .project-side-by-side .project-img-text .project-img .overlay-text h4 {
+            font-size: 30px;
+            font-weight: 900;
+            text-align: center; }
+            @media (max-width: 550px) {
+              .project-part .project-side-by-side .project-img-text .project-img .overlay-text h4 {
+                font-size: 22px; } }
+          .project-part .project-side-by-side .project-img-text .project-img .overlay-text p {
+            font-size: 16px;
+            font-weight: 500;
+            text-align: center; }
+
+ul.slick-dots {
+  display: none !important; }
 
 .contact-part .contact-text {
   position: relative;
@@ -582,19 +1277,37 @@ button.slick-prev.slick-arrow:after {
     z-index: -1;
     font-weight: 900;
     width: 100%; }
+    @media (max-width: 768px) {
+      .contact-part .contact-text h2 {
+        display: none; } }
   .contact-part .contact-text h3 {
     font-size: 50px;
     font-weight: 700;
-    padding-bottom: 110px; }
+    padding-bottom: 200px; }
+    @media (max-width: 650px) {
+      .contact-part .contact-text h3 {
+        font-size: 40px;
+        padding-bottom: 100px; } }
+    @media (max-width: 768px) {
+      .contact-part .contact-text h3 {
+        padding-bottom: 100px; } }
 .contact-part .address-detail {
   display: flex;
   justify-content: space-between;
-  padding-top: 80px;
   padding-bottom: 50px; }
+  @media (max-width: 650px) {
+    .contact-part .address-detail {
+      flex-direction: column; } }
   .contact-part .address-detail .address {
     width: 24%;
     flex: 0 0 24%;
     margin: 0 auto; }
+    @media (max-width: 650px) {
+      .contact-part .address-detail .address {
+        width: 100%;
+        flex: 0 0 100%;
+        margin: 0 auto;
+        display: flex; } }
     .contact-part .address-detail .address .address-icon {
       text-align: center;
       background-color: rgba(255, 255, 255, 0.1);
@@ -602,6 +1315,14 @@ button.slick-prev.slick-arrow:after {
       height: 100px;
       width: 100px;
       margin: 0 auto; }
+      @media (max-width: 650px) {
+        .contact-part .address-detail .address .address-icon {
+          margin: 10px 20px; } }
+      @media (max-width: 550px) {
+        .contact-part .address-detail .address .address-icon {
+          border-radius: 80px;
+          height: 80px;
+          width: 80px; } }
       .contact-part .address-detail .address .address-icon:hover {
         transform: rotate(360deg);
         transition: 0.5s; }
@@ -609,6 +1330,10 @@ button.slick-prev.slick-arrow:after {
         font-size: 50px;
         color: #ffbd39;
         padding-top: 25px; }
+        @media (max-width: 550px) {
+          .contact-part .address-detail .address .address-icon a i {
+            font-size: 35px;
+            padding-top: 22px; } }
       .contact-part .address-detail .address .address-icon a:hover {
         transform: rotate3d(); }
     .contact-part .address-detail .address .address-text h4 {
@@ -616,17 +1341,35 @@ button.slick-prev.slick-arrow:after {
       text-align: center;
       font-weight: 700;
       padding-top: 50px; }
+      @media (max-width: 650px) {
+        .contact-part .address-detail .address .address-text h4 {
+          font-size: 18px;
+          padding-top: 35px;
+          text-align: left; } }
+      @media (max-width: 650px) {
+        .contact-part .address-detail .address .address-text h4 {
+          padding-top: 26px; } }
     .contact-part .address-detail .address .address-text p {
       font-size: 16px;
       text-align: center;
       padding-top: 10px;
       color: #999999; }
+      @media (max-width: 650px) {
+        .contact-part .address-detail .address .address-text p {
+          font-size: 14px; } }
 
+.footer-part .ftr-hr {
+  background-color: #ffffff;
+  height: 1px;
+  width: 100%; }
 .footer-part .ftr-text-media {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 0; }
+  @media (max-width: 550px) {
+    .footer-part .ftr-text-media {
+      flex-direction: column; } }
   .footer-part .ftr-text-media .social-media {
     width: 50%;
     flex: 0 0 50%;
@@ -641,5 +1384,8 @@ button.slick-prev.slick-arrow:after {
     .footer-part .ftr-text-media .ftr-note p {
       font-size: 12px;
       text-align: center; }
+      @media (max-width: 550px) {
+        .footer-part .ftr-text-media .ftr-note p {
+          padding-top: 20px; } }
 
 /*# sourceMappingURL=style.css.map */
