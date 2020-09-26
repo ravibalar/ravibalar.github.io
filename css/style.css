@@ -9,8 +9,8 @@ img {
 body {
   margin: 0 auto;
   font-family: "Roboto", sans-serif;
-  background-color: black;
-  color: #ffffff; }
+  background-color: #ffffff;
+  color: #be9b7b; }
 
 .container {
   max-width: 1340px;
@@ -33,13 +33,14 @@ p {
   position: sticky;
   z-index: 99999;
   top: 0;
-  background-color: black; }
+  background-color: #be9b7b; }
   @media (max-width: 768px) {
     .menubar {
       display: none; } }
   .menubar .logo-and-menubar {
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    align-items: center; }
     .menubar .logo-and-menubar .logo-of-ravi img {
       width: 70px;
       height: 70px; }
@@ -61,7 +62,7 @@ p {
             text-decoration: underline; }
 
 .menu {
-  background: #000000;
+  background: #be9b7b;
   width: 100%;
   display: none; }
   .menu ul {
@@ -71,15 +72,16 @@ p {
     text-align: center; }
     .menu ul a {
       text-decoration: none;
-      color: #ffffff; }
+      color: #3c2f2f; }
       .menu ul a li {
-        color: #ffffff;
+        color: #3c2f2f;
         font-size: 12px;
         letter-spacing: 2px;
         padding: 15px 0;
         text-transform: uppercase; }
         .menu ul a li:hover {
-          background: #fdc11b; }
+          background: #3c2f2f;
+          color: #be9b7b; }
 
 .menu-toggle {
   background: none;
@@ -96,7 +98,7 @@ p {
     text-decoration: none;
     color: #333; }
     .menu-toggle a i {
-      color: #dea21a;
+      color: #be9b7b;
       font-size: 50px; }
 
 .hero-part {
@@ -122,7 +124,7 @@ p {
           padding-top: 70px;
           padding-left: 50px; } }
       .hero-part .author-detail .hero-part-text .welcome-text p {
-        color: #fdc11b; }
+        color: #3c2f2f; }
       .hero-part .author-detail .hero-part-text .Author-text h1 {
         font-size: 70px; }
         @media (max-width: 991px) {
@@ -138,7 +140,7 @@ p {
           .hero-part .author-detail .hero-part-text .Author-text h1 {
             font-size: 25px; } }
         .hero-part .author-detail .hero-part-text .Author-text h1 span {
-          color: #fdc11b; }
+          color: #3c2f2f; }
       .hero-part .author-detail .hero-part-text .about-author h3 {
         font-size: 30px; }
         @media (max-width: 991px) {
@@ -162,21 +164,21 @@ p {
           .hero-part .author-detail .hero-part-text .heropart-btn {
             padding-top: 10px;
             display: flex;
-            flex-direction: column; } }
-        @media (max-width: 425px) {
-          .hero-part .author-detail .hero-part-text .heropart-btn {
-            flex-direction: row; } }
+            flex-direction: column;
+            width: 100px; } }
         .hero-part .author-detail .hero-part-text .heropart-btn a {
           padding: 15px 15px;
-          border: 1px solid white;
+          border: 1px solid #be9b7b;
           border-radius: 50px;
-          color: white;
+          color: #be9b7b;
           text-decoration: none;
           outline: none;
           transition: 0.6s ease-in; }
           @media (max-width: 650px) {
             .hero-part .author-detail .hero-part-text .heropart-btn a {
-              padding: 10px 10px; } }
+              padding: 10px 10px;
+              margin-top: 10px;
+              text-align: center; } }
           @media (max-width: 550px) {
             .hero-part .author-detail .hero-part-text .heropart-btn a {
               padding: 5px 0;
@@ -187,8 +189,8 @@ p {
             .hero-part .author-detail .hero-part-text .heropart-btn a {
               margin-right: 10px; } }
           .hero-part .author-detail .hero-part-text .heropart-btn a:hover {
-            background-color: #fdc11b;
-            color: black; }
+            background-color: #4b3832;
+            color: #be9b7b; }
     .hero-part .author-detail .author-img img {
       width: 350px; }
       @media (max-width: 991px) {
@@ -248,7 +250,7 @@ p {
       .about-me-part .aboutme .ravi-detail h2 {
         position: absolute;
         font-size: 7vw;
-        color: rgba(255, 255, 255, 0.1);
+        color: rgba(190, 155, 123, 0.1);
         z-index: -1;
         font-weight: 900;
         padding-top: 120px; }
@@ -259,7 +261,14 @@ p {
         font-size: 50px;
         font-weight: 700;
         padding-bottom: 150px;
-        padding-top: 120px; }
+        padding-top: 120px;
+        padding-left: 100px; }
+        @media (max-width: 1440px) {
+          .about-me-part .aboutme .ravi-detail h3 {
+            padding-left: 50px; } }
+        @media (max-width: 1024px) {
+          .about-me-part .aboutme .ravi-detail h3 {
+            padding-left: 10px; } }
         @media (max-width: 768px) {
           .about-me-part .aboutme .ravi-detail h3 {
             padding-bottom: 40px; } }
@@ -293,7 +302,7 @@ p {
               width: 110px;
               height: 25px; } }
         .about-me-part .aboutme .ravi-detail .about-ravi .value {
-          color: #999999;
+          color: #3c2f2f;
           font-size: 16px; }
       .about-me-part .aboutme .ravi-detail .about-projects .total-project {
         padding-top: 25px;
@@ -306,7 +315,7 @@ p {
           .about-me-part .aboutme .ravi-detail .about-projects .total-project {
             padding-left: 50px; } }
         .about-me-part .aboutme .ravi-detail .about-projects .total-project .number {
-          color: #fdc11b; }
+          color: #854442; }
       .about-me-part .aboutme .ravi-detail .download-resume {
         padding-top: 50px; }
         @media (max-width: 550px) {
@@ -319,7 +328,7 @@ p {
             text-align: center; } }
         .about-me-part .aboutme .ravi-detail .download-resume a {
           text-decoration: none;
-          color: white;
+          color: #be9b7b;
           padding: 15px 15px;
           border: 1px solid;
           border-radius: 50px;
@@ -329,8 +338,8 @@ p {
             .about-me-part .aboutme .ravi-detail .download-resume a {
               padding: 10px 10px; } }
           .about-me-part .aboutme .ravi-detail .download-resume a:hover {
-            background-color: #fdc11b;
-            color: black; }
+            background-color: #4b3832;
+            color: #be9b7b; }
 
 .resume-part {
   padding-bottom: 100px; }
@@ -342,7 +351,7 @@ p {
       top: 0px;
       left: 0;
       font-size: 7vw;
-      color: rgba(255, 255, 255, 0.1);
+      color: rgba(190, 155, 123, 0.1);
       z-index: -1;
       font-weight: 900;
       width: 100%; }
@@ -378,10 +387,10 @@ p {
       position: relative;
       height: 200px;
       width: 200px;
-      border: 1px solid white;
+      border: 1px solid #4b3832;
       border-radius: 200px;
       outline: none;
-      background-color: rgba(255, 255, 255, 0.1); }
+      background-color: rgba(190, 155, 123, 0.1); }
       @media (max-width: 1110px) {
         .resume-part .year-for-flex .year-wise-post .year-button-outer {
           position: relative;
@@ -392,12 +401,12 @@ p {
         position: absolute;
         height: 130px;
         width: 130px;
-        border: 3px solid white;
+        border: 3px solid #4b3832;
         border-radius: 130px;
         outline: none;
         left: 33px;
         top: 33px;
-        background-image: linear-gradient(to right bottom, #f3a23e, #f5aa3f, #f6b241, #f7ba43, #f8c246); }
+        background-image: linear-gradient(to right bottom, #80655c, #725951, #654e46, #58433c, #4b3832); }
         @media (max-width: 1110px) {
           .resume-part .year-for-flex .year-wise-post .year-button-outer .year-button {
             position: absolute;
@@ -408,17 +417,25 @@ p {
             top: 19px; } }
         .resume-part .year-for-flex .year-wise-post .year-button-outer .year-button:hover {
           cursor: pointer;
-          background-image: linear-gradient(to right bottom, #f69217, #f09615, #ea9b16, #e49e17, #dea21a); }
+          background-image: linear-gradient(to left top, #80655c, #725951, #654e46, #58433c, #4b3832); }
         .resume-part .year-for-flex .year-wise-post .year-button-outer .year-button p {
           position: absolute;
-          top: 27px;
-          left: 17px;
+          top: 30px;
+          left: 22px;
           text-align: center;
           font-weight: 900;
           font-size: 16px; }
           @media (max-width: 1110px) {
             .resume-part .year-for-flex .year-wise-post .year-button-outer .year-button p {
               font-size: 14px; } }
+          @media (max-width: 1024px) {
+            .resume-part .year-for-flex .year-wise-post .year-button-outer .year-button p {
+              top: 25px;
+              left: 16px; } }
+          @media (max-width: 768px) {
+            .resume-part .year-for-flex .year-wise-post .year-button-outer .year-button p {
+              top: 27px;
+              left: 18px; } }
     .resume-part .year-for-flex .year-wise-post .animation-resume {
       display: flex;
       align-items: center; }
@@ -428,7 +445,7 @@ p {
       .resume-part .year-for-flex .year-wise-post .animation-resume .right-arrow i {
         font-size: 60px;
         padding: 0 20px;
-        color: #ffbd39; }
+        color: #be9b7b; }
         @media (max-width: 1110px) {
           .resume-part .year-for-flex .year-wise-post .animation-resume .right-arrow i {
             font-size: 40px;
@@ -438,7 +455,7 @@ p {
             padding: 15px;
             transform: rotate(90deg); } }
       .resume-part .year-for-flex .year-wise-post .animation-resume .detail-of-company {
-        border: 2px solid #ffbd39;
+        border: 2px solid #4b3832;
         border-radius: 20px;
         outline: none;
         display: flex;
@@ -464,7 +481,7 @@ p {
               width: 100%;
               flex: 0 0 100%; } }
           .resume-part .year-for-flex .year-wise-post .animation-resume .detail-of-company .company-detail-yearwise img {
-            background-color: #ffbd39; }
+            background-color: rgba(190, 155, 123, 0.1); }
             @media (max-width: 1110px) {
               .resume-part .year-for-flex .year-wise-post .animation-resume .detail-of-company .company-detail-yearwise img {
                 height: 100px;
@@ -498,7 +515,7 @@ p {
                 padding: 10px; } }
           .resume-part .year-for-flex .year-wise-post .animation-resume .detail-of-company .logo-of-company p {
             padding: 20px;
-            color: #999999; }
+            color: #4b3832; }
             @media (max-width: 991px) {
               .resume-part .year-for-flex .year-wise-post .animation-resume .detail-of-company .logo-of-company p {
                 padding: 10px; } }
@@ -517,10 +534,10 @@ p {
       position: relative;
       height: 200px;
       width: 200px;
-      border: 1px solid white;
+      border: 1px solid #4b3832;
       border-radius: 200px;
       outline: none;
-      background-color: rgba(255, 255, 255, 0.1); }
+      background-color: rgba(190, 155, 123, 0.1); }
       @media (max-width: 1110px) {
         .resume-part .year-for-flex .year-wise-post2 .year-button-outer {
           position: relative;
@@ -531,12 +548,12 @@ p {
         position: absolute;
         height: 130px;
         width: 130px;
-        border: 3px solid white;
+        border: 3px solid #4b3832;
         border-radius: 130px;
         outline: none;
         left: 33px;
         top: 33px;
-        background-image: linear-gradient(to right bottom, #f3a23e, #f5aa3f, #f6b241, #f7ba43, #f8c246); }
+        background-image: linear-gradient(to right bottom, #80655c, #725951, #654e46, #58433c, #4b3832); }
         @media (max-width: 1110px) {
           .resume-part .year-for-flex .year-wise-post2 .year-button-outer .year-button {
             position: absolute;
@@ -547,17 +564,25 @@ p {
             top: 19px; } }
         .resume-part .year-for-flex .year-wise-post2 .year-button-outer .year-button:hover {
           cursor: pointer;
-          background-image: linear-gradient(to right bottom, #f69217, #f09615, #ea9b16, #e49e17, #dea21a); }
+          background-image: linear-gradient(to left top, #80655c, #725951, #654e46, #58433c, #4b3832); }
         .resume-part .year-for-flex .year-wise-post2 .year-button-outer .year-button p {
           position: absolute;
-          top: 27px;
-          left: 17px;
+          top: 30px;
+          left: 22px;
           text-align: center;
           font-weight: 900;
           font-size: 16px; }
           @media (max-width: 1110px) {
             .resume-part .year-for-flex .year-wise-post2 .year-button-outer .year-button p {
               font-size: 14px; } }
+          @media (max-width: 1024px) {
+            .resume-part .year-for-flex .year-wise-post2 .year-button-outer .year-button p {
+              top: 25px;
+              left: 16px; } }
+          @media (max-width: 768px) {
+            .resume-part .year-for-flex .year-wise-post2 .year-button-outer .year-button p {
+              top: 27px;
+              left: 18px; } }
     .resume-part .year-for-flex .year-wise-post2 .animation-resume {
       display: flex;
       align-items: center; }
@@ -567,7 +592,7 @@ p {
       .resume-part .year-for-flex .year-wise-post2 .animation-resume .right-arrow i {
         font-size: 60px;
         padding: 0 20px;
-        color: #ffbd39; }
+        color: #be9b7b; }
         @media (max-width: 1110px) {
           .resume-part .year-for-flex .year-wise-post2 .animation-resume .right-arrow i {
             font-size: 40px;
@@ -577,7 +602,7 @@ p {
             padding: 15px;
             transform: rotate(90deg); } }
       .resume-part .year-for-flex .year-wise-post2 .animation-resume .detail-of-company {
-        border: 2px solid #ffbd39;
+        border: 2px solid #4b3832;
         border-radius: 20px;
         outline: none;
         display: flex;
@@ -603,7 +628,7 @@ p {
               width: 100%;
               flex: 0 0 100%; } }
           .resume-part .year-for-flex .year-wise-post2 .animation-resume .detail-of-company .company-detail-yearwise img {
-            background-color: #ffbd39; }
+            background-color: rgba(190, 155, 123, 0.1); }
             @media (max-width: 1110px) {
               .resume-part .year-for-flex .year-wise-post2 .animation-resume .detail-of-company .company-detail-yearwise img {
                 height: 100px;
@@ -637,7 +662,7 @@ p {
                 font-size: 16px; } }
           .resume-part .year-for-flex .year-wise-post2 .animation-resume .detail-of-company .logo-of-company p {
             padding: 20px;
-            color: #999999; }
+            color: #4b3832; }
             @media (max-width: 991px) {
               .resume-part .year-for-flex .year-wise-post2 .animation-resume .detail-of-company .logo-of-company p {
                 padding: 10px; } }
@@ -656,10 +681,10 @@ p {
       position: relative;
       height: 200px;
       width: 200px;
-      border: 1px solid white;
+      border: 1px solid #4b3832;
+      background-color: rgba(190, 155, 123, 0.1);
       border-radius: 200px;
-      outline: none;
-      background-color: rgba(255, 255, 255, 0.1); }
+      outline: none; }
       @media (max-width: 1110px) {
         .resume-part .year-for-flex .year-wise-post3 .year-button-outer {
           position: relative;
@@ -670,12 +695,12 @@ p {
         position: absolute;
         height: 130px;
         width: 130px;
-        border: 3px solid white;
         border-radius: 130px;
         outline: none;
         left: 33px;
         top: 33px;
-        background-image: linear-gradient(to right bottom, #f3a23e, #f5aa3f, #f6b241, #f7ba43, #f8c246); }
+        border: 3px solid #4b3832;
+        background-image: linear-gradient(to right bottom, #80655c, #725951, #654e46, #58433c, #4b3832); }
         @media (max-width: 1110px) {
           .resume-part .year-for-flex .year-wise-post3 .year-button-outer .year-button {
             position: absolute;
@@ -686,17 +711,25 @@ p {
             top: 19px; } }
         .resume-part .year-for-flex .year-wise-post3 .year-button-outer .year-button:hover {
           cursor: pointer;
-          background-image: linear-gradient(to right bottom, #f69217, #f09615, #ea9b16, #e49e17, #dea21a); }
+          background-image: linear-gradient(to left top, #80655c, #725951, #654e46, #58433c, #4b3832); }
         .resume-part .year-for-flex .year-wise-post3 .year-button-outer .year-button p {
           position: absolute;
-          top: 27px;
-          left: 17px;
+          top: 30px;
+          left: 22px;
           text-align: center;
           font-weight: 900;
           font-size: 16px; }
           @media (max-width: 1110px) {
             .resume-part .year-for-flex .year-wise-post3 .year-button-outer .year-button p {
               font-size: 14px; } }
+          @media (max-width: 1024px) {
+            .resume-part .year-for-flex .year-wise-post3 .year-button-outer .year-button p {
+              top: 25px;
+              left: 16px; } }
+          @media (max-width: 768px) {
+            .resume-part .year-for-flex .year-wise-post3 .year-button-outer .year-button p {
+              top: 27px;
+              left: 18px; } }
     .resume-part .year-for-flex .year-wise-post3 .animation-resume {
       display: flex;
       align-items: center; }
@@ -706,7 +739,7 @@ p {
       .resume-part .year-for-flex .year-wise-post3 .animation-resume .right-arrow i {
         font-size: 60px;
         padding: 0 20px;
-        color: #ffbd39; }
+        color: #be9b7b; }
         @media (max-width: 1110px) {
           .resume-part .year-for-flex .year-wise-post3 .animation-resume .right-arrow i {
             font-size: 40px;
@@ -716,7 +749,7 @@ p {
             padding: 15px;
             transform: rotate(90deg); } }
       .resume-part .year-for-flex .year-wise-post3 .animation-resume .detail-of-company {
-        border: 2px solid #ffbd39;
+        border: 2px solid #4b3832;
         border-radius: 20px;
         outline: none;
         display: flex;
@@ -742,7 +775,7 @@ p {
               width: 100%;
               flex: 0 0 100%; } }
           .resume-part .year-for-flex .year-wise-post3 .animation-resume .detail-of-company .company-detail-yearwise img {
-            background-color: #ffbd39; }
+            background-color: rgba(190, 155, 123, 0.1); }
             @media (max-width: 1110px) {
               .resume-part .year-for-flex .year-wise-post3 .animation-resume .detail-of-company .company-detail-yearwise img {
                 height: 100px;
@@ -776,7 +809,7 @@ p {
                 font-size: 16px; } }
           .resume-part .year-for-flex .year-wise-post3 .animation-resume .detail-of-company .logo-of-company p {
             padding: 20px;
-            color: #999999; }
+            color: #4b3832; }
             @media (max-width: 991px) {
               .resume-part .year-for-flex .year-wise-post3 .animation-resume .detail-of-company .logo-of-company p {
                 padding: 10px; } }
@@ -795,10 +828,10 @@ p {
       position: relative;
       height: 200px;
       width: 200px;
-      border: 1px solid white;
       border-radius: 200px;
       outline: none;
-      background-color: rgba(255, 255, 255, 0.1); }
+      border: 1px solid #4b3832;
+      background-color: rgba(190, 155, 123, 0.1); }
       @media (max-width: 1110px) {
         .resume-part .year-for-flex .year-wise-post4 .year-button-outer {
           position: relative;
@@ -809,12 +842,12 @@ p {
         position: absolute;
         height: 130px;
         width: 130px;
-        border: 3px solid white;
         border-radius: 130px;
         outline: none;
         left: 33px;
         top: 33px;
-        background-image: linear-gradient(to right bottom, #f3a23e, #f5aa3f, #f6b241, #f7ba43, #f8c246); }
+        border: 3px solid #4b3832;
+        background-image: linear-gradient(to right bottom, #80655c, #725951, #654e46, #58433c, #4b3832); }
         @media (max-width: 1110px) {
           .resume-part .year-for-flex .year-wise-post4 .year-button-outer .year-button {
             position: absolute;
@@ -825,17 +858,27 @@ p {
             top: 19px; } }
         .resume-part .year-for-flex .year-wise-post4 .year-button-outer .year-button:hover {
           cursor: pointer;
-          background-image: linear-gradient(to right bottom, #f69217, #f09615, #ea9b16, #e49e17, #dea21a); }
+          background-image: linear-gradient(to left top, #80655c, #725951, #654e46, #58433c, #4b3832); }
         .resume-part .year-for-flex .year-wise-post4 .year-button-outer .year-button p {
           position: absolute;
-          top: 27px;
-          left: 17px;
+          top: 30px;
+          left: 22px;
           text-align: center;
           font-weight: 900;
           font-size: 16px; }
           @media (max-width: 1110px) {
             .resume-part .year-for-flex .year-wise-post4 .year-button-outer .year-button p {
-              font-size: 14px; } }
+              font-size: 14px;
+              top: 25px;
+              left: 16px; } }
+          @media (max-width: 1024px) {
+            .resume-part .year-for-flex .year-wise-post4 .year-button-outer .year-button p {
+              top: 25px;
+              left: 16px; } }
+          @media (max-width: 768px) {
+            .resume-part .year-for-flex .year-wise-post4 .year-button-outer .year-button p {
+              top: 27px;
+              left: 18px; } }
     .resume-part .year-for-flex .year-wise-post4 .animation-resume {
       display: flex;
       align-items: center; }
@@ -845,7 +888,7 @@ p {
       .resume-part .year-for-flex .year-wise-post4 .animation-resume .right-arrow i {
         font-size: 60px;
         padding: 0 20px;
-        color: #ffbd39; }
+        color: #be9b7b; }
         @media (max-width: 1110px) {
           .resume-part .year-for-flex .year-wise-post4 .animation-resume .right-arrow i {
             font-size: 40px;
@@ -855,7 +898,7 @@ p {
             padding: 15px;
             transform: rotate(90deg); } }
       .resume-part .year-for-flex .year-wise-post4 .animation-resume .detail-of-company {
-        border: 2px solid #ffbd39;
+        border: 2px solid #4b3832;
         border-radius: 20px;
         outline: none;
         display: flex;
@@ -881,7 +924,7 @@ p {
               width: 100%;
               flex: 0 0 100%; } }
           .resume-part .year-for-flex .year-wise-post4 .animation-resume .detail-of-company .company-detail-yearwise img {
-            background-color: #ffbd39; }
+            background-color: rgba(190, 155, 123, 0.1); }
             @media (max-width: 1110px) {
               .resume-part .year-for-flex .year-wise-post4 .animation-resume .detail-of-company .company-detail-yearwise img {
                 height: 100px;
@@ -915,7 +958,7 @@ p {
                 font-size: 16px; } }
           .resume-part .year-for-flex .year-wise-post4 .animation-resume .detail-of-company .logo-of-company p {
             padding: 20px;
-            color: #999999; }
+            color: #4b3832; }
             @media (max-width: 991px) {
               .resume-part .year-for-flex .year-wise-post4 .animation-resume .detail-of-company .logo-of-company p {
                 padding: 10px; } }
@@ -930,7 +973,7 @@ p {
       top: 0px;
       left: 0;
       font-size: 7vw;
-      color: rgba(255, 255, 255, 0.1);
+      color: rgba(190, 155, 123, 0.1);
       z-index: -1;
       font-weight: 900;
       width: 100%; }
@@ -956,11 +999,11 @@ p {
         padding-top: 0; } }
     .education .education-table table {
       width: 100%;
-      border: 5px solid #ffbd39;
+      border: 5px solid #4b3832;
       border-collapse: collapse; }
       .education .education-table table tr th {
         text-align: left;
-        border: 5px solid #ffbd39;
+        border: 5px solid #4b3832;
         border-collapse: collapse;
         padding: 10px;
         font-size: 30px; }
@@ -968,7 +1011,7 @@ p {
           .education .education-table table tr th {
             font-size: 18px; } }
       .education .education-table table tr td {
-        border: 5px solid #ffbd39;
+        border: 5px solid #4b3832;
         border-collapse: collapse;
         padding: 10px;
         font-size: 18px; }
@@ -985,7 +1028,7 @@ p {
     top: 0px;
     left: 0;
     font-size: 7vw;
-    color: rgba(255, 255, 255, 0.1);
+    color: rgba(190, 155, 123, 0.1);
     z-index: -1;
     font-weight: 900;
     width: 100%; }
@@ -1000,7 +1043,7 @@ p {
         font-size: 40px; } }
   .service-part .service-text p {
     padding-top: 25px;
-    color: #999999; }
+    color: #4b3832; }
 
 .all-services {
   display: flex;
@@ -1018,14 +1061,14 @@ p {
     width: 23%;
     flex: 0 0 23%;
     margin: 0 auto;
-    background: rgba(255, 255, 255, 0.1); }
+    background: rgba(190, 155, 123, 0.1); }
     @media (max-width: 768px) {
       .all-services .list-of-service {
         width: 60%;
         flex: 0 0 60%;
         margin: 10px auto; } }
     .all-services .list-of-service:hover {
-      background-color: black;
+      background-color: #4b3832;
       border: 1px solid #ffbd39;
       cursor: pointer;
       transform: scale(1.1);
@@ -1038,7 +1081,7 @@ p {
     padding-top: 40px;
     text-align: center; }
   .all-services .text-of-service .hr-lines {
-    background-color: #ffffff;
+    background-color: #4b3832;
     height: 1px;
     width: 30px;
     margin: 30px auto; }
@@ -1053,7 +1096,7 @@ p {
       top: 20px;
       left: 0;
       font-size: 7vw;
-      color: rgba(255, 255, 255, 0.1);
+      color: rgba(190, 155, 123, 0.1);
       z-index: -1;
       font-weight: 900;
       width: 100%; }
@@ -1081,12 +1124,13 @@ p {
         padding: 20px 58px; } }
     .skill-slider .slide-to-show h3 {
       font-size: 26px;
-      color: #ffbd39;
+      color: #4b3832;
       text-align: left; }
     .skill-slider .slide-to-show hr {
       width: 120px;
       margin-top: 20px;
-      margin-left: 0; }
+      margin-left: 0;
+      color: #4b3832; }
     .skill-slider .slide-to-show ul {
       text-align: left;
       padding: 0; }
@@ -1109,7 +1153,7 @@ button.slick-next.slick-arrow {
   top: 50%;
   z-index: 999;
   font-size: 0;
-  background-color: #ffbd39;
+  background-color: #be9b7b;
   border: none;
   border-radius: 50px;
   outline: none;
@@ -1131,7 +1175,7 @@ button.slick-prev.slick-arrow {
   top: 50%;
   z-index: 999;
   font-size: 0;
-  background-color: #ffbd39;
+  background-color: #be9b7b;
   border: none;
   border-radius: 50px;
   outline: none;
@@ -1171,10 +1215,10 @@ button.slick-prev.slick-arrow:after {
 
 @media (min-width: 769px) {
   .slick-active.slick-center {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(190, 155, 123, 0.1);
     transform: scale(1.1);
     transition: 0.5s;
-    border: 1px solid #ffbd39; } }
+    border: 1px solid #4b3832; } }
 .project-part {
   padding-bottom: 50px; }
   .project-part .project-texts {
@@ -1185,7 +1229,7 @@ button.slick-prev.slick-arrow:after {
       top: 10px;
       left: 0;
       font-size: 7vw;
-      color: rgba(255, 255, 255, 0.1);
+      color: rgba(190, 155, 123, 0.1);
       z-index: -1;
       font-weight: 900;
       width: 100%; }
@@ -1227,7 +1271,7 @@ button.slick-prev.slick-arrow:after {
           bottom: 0;
           content: "";
           opacity: 0;
-          background: #ffbd39;
+          background: #be9b7b;
           z-index: 1;
           transition: 0.5s all; }
         .project-part .project-side-by-side .project-img-text .project-img .overlay-text {
@@ -1237,7 +1281,8 @@ button.slick-prev.slick-arrow:after {
           top: 45%;
           left: 25%;
           opacity: 0;
-          transition: 0.5s all; }
+          transition: 0.5s all;
+          color: #ffffff; }
           @media screen and (min-device-width: 769px) and (max-device-width: 1024px) {
             .project-part .project-side-by-side .project-img-text .project-img .overlay-text {
               top: 42%;
@@ -1273,7 +1318,7 @@ ul.slick-dots {
     top: 10px;
     left: 0;
     font-size: 7vw;
-    color: rgba(255, 255, 255, 0.1);
+    color: rgba(190, 155, 123, 0.1);
     z-index: -1;
     font-weight: 900;
     width: 100%; }
@@ -1310,7 +1355,7 @@ ul.slick-dots {
         display: flex; } }
     .contact-part .address-detail .address .address-icon {
       text-align: center;
-      background-color: rgba(255, 255, 255, 0.1);
+      background-color: rgba(190, 155, 123, 0.1);
       border-radius: 100px;
       height: 100px;
       width: 100px;
@@ -1328,7 +1373,7 @@ ul.slick-dots {
         transition: 0.5s; }
       .contact-part .address-detail .address .address-icon a i {
         font-size: 50px;
-        color: #ffbd39;
+        color: #4b3832;
         padding-top: 25px; }
         @media (max-width: 550px) {
           .contact-part .address-detail .address .address-icon a i {
@@ -1359,7 +1404,7 @@ ul.slick-dots {
           font-size: 14px; } }
 
 .footer-part .ftr-hr {
-  background-color: #ffffff;
+  background-color: #4b3832;
   height: 1px;
   width: 100%; }
 .footer-part .ftr-text-media {
@@ -1377,7 +1422,7 @@ ul.slick-dots {
     justify-content: space-evenly; }
     .footer-part .ftr-text-media .social-media a i {
       font-size: 25px;
-      color: #ffbd39; }
+      color: #4b3832; }
   .footer-part .ftr-text-media .ftr-note {
     width: 50%;
     flex: 0 0 50%; }

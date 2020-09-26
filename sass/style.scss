@@ -11,8 +11,8 @@ img {
 body {
   margin: 0 auto;
   font-family: "Roboto", sans-serif;
-  background-color: black;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #be9b7b;
 }
 
 .container {
@@ -40,7 +40,7 @@ p {
   position: sticky;
   z-index: 99999;
   top: 0;
-  background-color: black;
+  background-color: #be9b7b;
 
   @media (max-width: 768px) {
     display: none;
@@ -49,6 +49,7 @@ p {
   .logo-and-menubar {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     .logo-of-ravi {
       img {
         width: 70px;
@@ -86,7 +87,7 @@ p {
 // resposive header css
 
 .menu {
-  background: #000000;
+  background: #be9b7b;
   width: 100%;
   display: none;
   ul {
@@ -96,16 +97,17 @@ p {
     text-align: center;
     a {
       text-decoration: none;
-      color: #ffffff;
+      color: #3c2f2f;
       li {
-        color: #ffffff;
+        color: #3c2f2f;
         font-size: 12px;
         letter-spacing: 2px;
         padding: 15px 0;
         text-transform: uppercase;
 
         &:hover {
-          background: #fdc11b;
+          background: #3c2f2f;
+          color: #be9b7b;
         }
       }
     }
@@ -127,7 +129,7 @@ p {
     text-decoration: none;
     color: #333;
     i {
-      color: #dea21a;
+      color: #be9b7b;
       font-size: 50px;
     }
   }
@@ -167,7 +169,7 @@ p {
 
       .welcome-text {
         p {
-          color: #fdc11b;
+          color: #3c2f2f;
         }
       }
 
@@ -191,7 +193,7 @@ p {
           }
 
           span {
-            color: #fdc11b;
+            color: #3c2f2f;
           }
         }
       }
@@ -225,22 +227,25 @@ p {
           padding-top: 10px;
           display: flex;
           flex-direction: column;
+          width: 100px;
         }
         @media (max-width: 425px) {
-          flex-direction: row;
+          // flex-direction: row;
         }
 
         a {
           padding: 15px 15px;
-          border: 1px solid white;
+          border: 1px solid #be9b7b;
           border-radius: 50px;
-          color: white;
+          color: #be9b7b;
           text-decoration: none;
           outline: none;
           transition: 0.6s ease-in;
 
           @media (max-width: 650px) {
             padding: 10px 10px;
+            margin-top: 10px;
+            text-align: center;
           }
           @media (max-width: 550px) {
             padding: 5px 0;
@@ -253,8 +258,8 @@ p {
           }
 
           &:hover {
-            background-color: #fdc11b;
-            color: black;
+            background-color: #4b3832;
+            color: #be9b7b;
           }
         }
       }
@@ -336,7 +341,7 @@ p {
       h2 {
         position: absolute;
         font-size: 7vw;
-        color: rgba(255, 255, 255, 0.1);
+        color: rgba(190, 155, 123, 0.1);
         z-index: -1;
         font-weight: 900;
         padding-top: 120px;
@@ -351,6 +356,14 @@ p {
         font-weight: 700;
         padding-bottom: 150px;
         padding-top: 120px;
+        padding-left: 100px;
+
+        @media (max-width: 1440px) {
+          padding-left: 50px;
+        }
+        @media (max-width: 1024px) {
+          padding-left: 10px;
+        }
 
         @media (max-width: 768px) {
           padding-bottom: 40px;
@@ -394,7 +407,7 @@ p {
         }
 
         .value {
-          color: #999999;
+          color: #3c2f2f ;
           font-size: 16px;
         }
       }
@@ -413,7 +426,7 @@ p {
           }
 
           .number {
-            color: #fdc11b;
+            color: #854442;
           }
         }
       }
@@ -432,7 +445,7 @@ p {
 
         a {
           text-decoration: none;
-          color: white;
+          color: #be9b7b;
           padding: 15px 15px;
           border: 1px solid;
           border-radius: 50px;
@@ -444,8 +457,8 @@ p {
           }
 
           &:hover {
-            background-color: #fdc11b;
-            color: black;
+            background-color: #4b3832;
+            color: #be9b7b;
           }
         }
       }
@@ -538,7 +551,7 @@ p {
       top: 0px;
       left: 0;
       font-size: 7vw;
-      color: rgba(255, 255, 255, 0.1);
+      color: rgba(190, 155, 123, 0.1);
       z-index: -1;
       font-weight: 900;
       width: 100%;
@@ -584,10 +597,10 @@ p {
         position: relative;
         height: 200px;
         width: 200px;
-        border: 1px solid white;
+        border: 1px solid #4b3832;
         border-radius: 200px;
         outline: none;
-        background-color: rgba(255, 255, 255, 0.1);
+        background-color: rgba(190, 155, 123, 0.1);
 
         @media (max-width: 1110px) {
           position: relative;
@@ -600,12 +613,12 @@ p {
           position: absolute;
           height: 130px;
           width: 130px;
-          border: 3px solid white;
+          border: 3px solid #4b3832;
           border-radius: 130px;
           outline: none;
           left: 33px;
           top: 33px;
-          background-image: linear-gradient(to right bottom, #f3a23e, #f5aa3f, #f6b241, #f7ba43, #f8c246);
+          background-image: linear-gradient(to right bottom, #80655c, #725951, #654e46, #58433c, #4b3832);
 
           @media (max-width: 1110px) {
             position: absolute;
@@ -618,19 +631,27 @@ p {
 
           &:hover {
             cursor: pointer;
-            background-image: linear-gradient(to right bottom, #f69217, #f09615, #ea9b16, #e49e17, #dea21a);
+            background-image: linear-gradient(to left top, #80655c, #725951, #654e46, #58433c, #4b3832);
           }
 
           p {
             position: absolute;
-            top: 27px;
-            left: 17px;
+            top: 30px;
+            left: 22px;
             text-align: center;
             font-weight: 900;
             font-size: 16px;
 
             @media (max-width: 1110px) {
               font-size: 14px;
+            }
+            @media (max-width: 1024px) {
+              top: 25px;
+              left: 16px;
+            }
+            @media (max-width: 768px) {
+              top: 27px;
+              left: 18px;
             }
           }
         }
@@ -647,7 +668,7 @@ p {
           i {
             font-size: 60px;
             padding: 0 20px;
-            color: #ffbd39;
+            color: #be9b7b;
 
             @media (max-width: 1110px) {
               font-size: 40px;
@@ -661,7 +682,7 @@ p {
         }
 
         .detail-of-company {
-          border: 2px solid #ffbd39;
+          border: 2px solid #4b3832;
           border-radius: 20px;
           outline: none;
           display: flex;
@@ -691,7 +712,7 @@ p {
               flex: 0 0 100%;
             }
             img {
-              background-color: #ffbd39;
+              background-color: rgba(190, 155, 123, 0.1);
 
               @media (max-width: 1110px) {
                 height: 100px;
@@ -729,7 +750,7 @@ p {
             }
             p {
               padding: 20px;
-              color: #999999;
+              color: #4b3832;
               @media (max-width: 991px) {
                 padding: 10px;
               }
@@ -755,10 +776,10 @@ p {
         position: relative;
         height: 200px;
         width: 200px;
-        border: 1px solid white;
+        border: 1px solid #4b3832;
         border-radius: 200px;
         outline: none;
-        background-color: rgba(255, 255, 255, 0.1);
+        background-color: rgba(190, 155, 123, 0.1);
 
         @media (max-width: 1110px) {
           position: relative;
@@ -771,12 +792,12 @@ p {
           position: absolute;
           height: 130px;
           width: 130px;
-          border: 3px solid white;
+          border: 3px solid #4b3832;
           border-radius: 130px;
           outline: none;
           left: 33px;
           top: 33px;
-          background-image: linear-gradient(to right bottom, #f3a23e, #f5aa3f, #f6b241, #f7ba43, #f8c246);
+          background-image: linear-gradient(to right bottom, #80655c, #725951, #654e46, #58433c, #4b3832);
 
           @media (max-width: 1110px) {
             position: absolute;
@@ -789,19 +810,27 @@ p {
 
           &:hover {
             cursor: pointer;
-            background-image: linear-gradient(to right bottom, #f69217, #f09615, #ea9b16, #e49e17, #dea21a);
+            background-image: linear-gradient(to left top, #80655c, #725951, #654e46, #58433c, #4b3832);
           }
 
           p {
             position: absolute;
-            top: 27px;
-            left: 17px;
+            top: 30px;
+            left: 22px;
             text-align: center;
             font-weight: 900;
             font-size: 16px;
 
             @media (max-width: 1110px) {
               font-size: 14px;
+            }
+            @media (max-width: 1024px) {
+              top: 25px;
+              left: 16px;
+            }
+            @media (max-width: 768px) {
+              top: 27px;
+              left: 18px;
             }
           }
         }
@@ -818,7 +847,7 @@ p {
           i {
             font-size: 60px;
             padding: 0 20px;
-            color: #ffbd39;
+            color: #be9b7b;
 
             @media (max-width: 1110px) {
               font-size: 40px;
@@ -833,7 +862,7 @@ p {
         }
 
         .detail-of-company {
-          border: 2px solid #ffbd39;
+          border: 2px solid #4b3832;
           border-radius: 20px;
           outline: none;
           display: flex;
@@ -863,7 +892,7 @@ p {
               flex: 0 0 100%;
             }
             img {
-              background-color: #ffbd39;
+              background-color: rgba(190, 155, 123, 0.1);
 
               @media (max-width: 1110px) {
                 height: 100px;
@@ -904,7 +933,7 @@ p {
             }
             p {
               padding: 20px;
-              color: #999999;
+              color: #4b3832;
               @media (max-width: 991px) {
                 padding: 10px;
               }
@@ -930,10 +959,10 @@ p {
         position: relative;
         height: 200px;
         width: 200px;
-        border: 1px solid white;
+        border: 1px solid #4b3832;
+        background-color: rgba(190, 155, 123, 0.1);
         border-radius: 200px;
         outline: none;
-        background-color: rgba(255, 255, 255, 0.1);
 
         @media (max-width: 1110px) {
           position: relative;
@@ -946,12 +975,12 @@ p {
           position: absolute;
           height: 130px;
           width: 130px;
-          border: 3px solid white;
           border-radius: 130px;
           outline: none;
           left: 33px;
           top: 33px;
-          background-image: linear-gradient(to right bottom, #f3a23e, #f5aa3f, #f6b241, #f7ba43, #f8c246);
+          border: 3px solid #4b3832;
+          background-image: linear-gradient(to right bottom, #80655c, #725951, #654e46, #58433c, #4b3832);
 
           @media (max-width: 1110px) {
             position: absolute;
@@ -964,19 +993,27 @@ p {
 
           &:hover {
             cursor: pointer;
-            background-image: linear-gradient(to right bottom, #f69217, #f09615, #ea9b16, #e49e17, #dea21a);
+            background-image: linear-gradient(to left top, #80655c, #725951, #654e46, #58433c, #4b3832);
           }
 
           p {
             position: absolute;
-            top: 27px;
-            left: 17px;
+            top: 30px;
+            left: 22px;
             text-align: center;
             font-weight: 900;
             font-size: 16px;
 
             @media (max-width: 1110px) {
               font-size: 14px;
+            }
+            @media (max-width: 1024px) {
+              top: 25px;
+              left: 16px;
+            }
+            @media (max-width: 768px) {
+              top: 27px;
+              left: 18px;
             }
           }
         }
@@ -993,7 +1030,7 @@ p {
           i {
             font-size: 60px;
             padding: 0 20px;
-            color: #ffbd39;
+            color: #be9b7b;
 
             @media (max-width: 1110px) {
               font-size: 40px;
@@ -1008,7 +1045,7 @@ p {
         }
 
         .detail-of-company {
-          border: 2px solid #ffbd39;
+          border: 2px solid #4b3832;
           border-radius: 20px;
           outline: none;
           display: flex;
@@ -1037,7 +1074,7 @@ p {
               flex: 0 0 100%;
             }
             img {
-              background-color: #ffbd39;
+              background-color: rgba(190, 155, 123, 0.1);
 
               @media (max-width: 1110px) {
                 height: 100px;
@@ -1077,7 +1114,7 @@ p {
             }
             p {
               padding: 20px;
-              color: #999999;
+              color: #4b3832;
               @media (max-width: 991px) {
                 padding: 10px;
               }
@@ -1103,10 +1140,10 @@ p {
         position: relative;
         height: 200px;
         width: 200px;
-        border: 1px solid white;
         border-radius: 200px;
         outline: none;
-        background-color: rgba(255, 255, 255, 0.1);
+        border: 1px solid #4b3832;
+        background-color: rgba(190, 155, 123, 0.1);
 
         @media (max-width: 1110px) {
           position: relative;
@@ -1119,12 +1156,12 @@ p {
           position: absolute;
           height: 130px;
           width: 130px;
-          border: 3px solid white;
           border-radius: 130px;
           outline: none;
           left: 33px;
           top: 33px;
-          background-image: linear-gradient(to right bottom, #f3a23e, #f5aa3f, #f6b241, #f7ba43, #f8c246);
+          border: 3px solid #4b3832;
+          background-image: linear-gradient(to right bottom, #80655c, #725951, #654e46, #58433c, #4b3832);
 
           @media (max-width: 1110px) {
             position: absolute;
@@ -1137,19 +1174,29 @@ p {
 
           &:hover {
             cursor: pointer;
-            background-image: linear-gradient(to right bottom, #f69217, #f09615, #ea9b16, #e49e17, #dea21a);
+            background-image: linear-gradient(to left top, #80655c, #725951, #654e46, #58433c, #4b3832);
           }
 
           p {
             position: absolute;
-            top: 27px;
-            left: 17px;
+            top: 30px;
+            left: 22px;
             text-align: center;
             font-weight: 900;
             font-size: 16px;
 
             @media (max-width: 1110px) {
               font-size: 14px;
+              top: 25px;
+              left: 16px;
+            }
+            @media (max-width: 1024px) {
+              top: 25px;
+              left: 16px;
+            }
+            @media (max-width: 768px) {
+              top: 27px;
+              left: 18px;
             }
           }
         }
@@ -1166,7 +1213,7 @@ p {
           i {
             font-size: 60px;
             padding: 0 20px;
-            color: #ffbd39;
+            color: #be9b7b;
 
             @media (max-width: 1110px) {
               font-size: 40px;
@@ -1180,7 +1227,7 @@ p {
         }
 
         .detail-of-company {
-          border: 2px solid #ffbd39;
+          border: 2px solid #4b3832;
           border-radius: 20px;
           outline: none;
           display: flex;
@@ -1209,7 +1256,7 @@ p {
               flex: 0 0 100%;
             }
             img {
-              background-color: #ffbd39;
+              background-color: rgba(190, 155, 123, 0.1);
 
               @media (max-width: 1110px) {
                 height: 100px;
@@ -1249,7 +1296,7 @@ p {
             }
             p {
               padding: 20px;
-              color: #999999;
+              color: #4b3832;
               @media (max-width: 991px) {
                 padding: 10px;
               }
@@ -1275,7 +1322,7 @@ p {
       top: 0px;
       left: 0;
       font-size: 7vw;
-      color: rgba(255, 255, 255, 0.1);
+      color: rgba(190, 155, 123, 0.1);
       z-index: -1;
       font-weight: 900;
       width: 100%;
@@ -1310,13 +1357,13 @@ p {
 
     table {
       width: 100%;
-      border: 5px solid #ffbd39;
+      border: 5px solid #4b3832;
       border-collapse: collapse;
 
       tr {
         th {
           text-align: left;
-          border: 5px solid #ffbd39;
+          border: 5px solid #4b3832;
           border-collapse: collapse;
           padding: 10px;
           font-size: 30px;
@@ -1327,7 +1374,7 @@ p {
         }
 
         td {
-          border: 5px solid #ffbd39;
+          border: 5px solid #4b3832;
           border-collapse: collapse;
           padding: 10px;
           font-size: 18px;
@@ -1354,7 +1401,7 @@ p {
       top: 0px;
       left: 0;
       font-size: 7vw;
-      color: rgba(255, 255, 255, 0.1);
+      color: rgba(190, 155, 123, 0.1);
       z-index: -1;
       font-weight: 900;
       width: 100%;
@@ -1375,7 +1422,7 @@ p {
 
     p {
       padding-top: 25px;
-      color: #999999;
+      color: #4b3832;
     }
   }
 }
@@ -1399,7 +1446,7 @@ p {
     width: 23%;
     flex: 0 0 23%;
     margin: 0 auto;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(190, 155, 123, 0.1);
 
     @media (max-width: 768px) {
       width: 60%;
@@ -1408,7 +1455,7 @@ p {
     }
 
     &:hover {
-      background-color: black;
+      background-color: #4b3832;
       border: 1px solid #ffbd39;
       cursor: pointer;
       transform: scale(1.1);
@@ -1431,7 +1478,7 @@ p {
     }
 
     .hr-lines {
-      background-color: #ffffff;
+      background-color: #4b3832;
       height: 1px;
       width: 30px;
       margin: 30px auto;
@@ -1453,7 +1500,7 @@ p {
       top: 20px;
       left: 0;
       font-size: 7vw;
-      color: rgba(255, 255, 255, 0.1);
+      color: rgba(190, 155, 123, 0.1);
       z-index: -1;
       font-weight: 900;
       width: 100%;
@@ -1494,7 +1541,7 @@ p {
 
     h3 {
       font-size: 26px;
-      color: #ffbd39;
+      color: #4b3832;
       text-align: left;
     }
 
@@ -1502,6 +1549,7 @@ p {
       width: 120px;
       margin-top: 20px;
       margin-left: 0;
+      color: #4b3832;
     }
 
     ul {
@@ -1535,7 +1583,7 @@ button.slick-next.slick-arrow {
   top: 50%;
   z-index: 999;
   font-size: 0;
-  background-color: #ffbd39;
+  background-color: #be9b7b;
   border: none;
   border-radius: 50px;
   outline: none;
@@ -1560,7 +1608,7 @@ button.slick-prev.slick-arrow {
   top: 50%;
   z-index: 999;
   font-size: 0;
-  background-color: #ffbd39;
+  background-color: #be9b7b;
   border: none;
   border-radius: 50px;
   outline: none;
@@ -1607,10 +1655,10 @@ button.slick-prev.slick-arrow:after {
 
 @media (min-width: 769px) {
   .slick-active.slick-center {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(190, 155, 123, 0.1);
     transform: scale(1.1);
     transition: 0.5s;
-    border: 1px solid #ffbd39;
+    border: 1px solid #4b3832;
   }
 }
 
@@ -1626,7 +1674,7 @@ button.slick-prev.slick-arrow:after {
       top: 10px;
       left: 0;
       font-size: 7vw;
-      color: rgba(255, 255, 255, 0.1);
+      color: rgba(190, 155, 123, 0.1);
       z-index: -1;
       font-weight: 900;
       width: 100%;
@@ -1681,7 +1729,7 @@ button.slick-prev.slick-arrow:after {
           bottom: 0;
           content: "";
           opacity: 0;
-          background: #ffbd39;
+          background: #be9b7b;
           z-index: 1;
           transition: 0.5s all;
         }
@@ -1693,6 +1741,7 @@ button.slick-prev.slick-arrow:after {
           left: 25%;
           opacity: 0;
           transition: 0.5s all;
+          color: #ffffff;
 
           @media screen and (min-device-width: 769px) and (max-device-width: 1024px) {
             top: 42%;
@@ -1741,7 +1790,7 @@ ul.slick-dots {
       top: 10px;
       left: 0;
       font-size: 7vw;
-      color: rgba(255, 255, 255, 0.1);
+      color: rgba(190, 155, 123, 0.1);
       z-index: -1;
       font-weight: 900;
       width: 100%;
@@ -1789,7 +1838,7 @@ ul.slick-dots {
 
       .address-icon {
         text-align: center;
-        background-color: rgba(255, 255, 255, 0.1);
+        background-color: rgba(190, 155, 123, 0.1);
         border-radius: 100px;
         height: 100px;
         width: 100px;
@@ -1812,7 +1861,7 @@ ul.slick-dots {
         a {
           i {
             font-size: 50px;
-            color: #ffbd39;
+            color: #4b3832;
             padding-top: 25px;
 
             @media (max-width: 550px) {
@@ -1863,7 +1912,7 @@ ul.slick-dots {
 
 .footer-part {
   .ftr-hr {
-    background-color: #ffffff;
+    background-color: #4b3832;
     height: 1px;
     width: 100%;
   }
@@ -1887,7 +1936,7 @@ ul.slick-dots {
       a {
         i {
           font-size: 25px;
-          color: #ffbd39;
+          color: #4b3832;
         }
       }
     }
