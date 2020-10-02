@@ -5,11 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css\style.css">
-  <script src="js\jquery-2.2.4.min.js" type="application/javascript"></script>
-  <script src="js\slick.min.js"></script>
   <link rel="stylesheet" href="js\slick.css">
   <title>Ravikumar Balar</title>
-  <script src="https://use.fontawesome.com/2fdcb6e8a9.js"></script>
 </head>
 
 <body>
@@ -21,15 +18,15 @@
           <img src="Image\ravi-name-logo.png" alt="ravi-name-logo">
         </div>
         <ul class="menu-item">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#experiance">Experiance</a></li>
-          <li><a href="#achievements">Achievements</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a class="active" href="#home" data-scroll="Home">Home</a></li>
+          <li><a href="#about" data-scroll="About">About</a></li>
+          <li><a href="#experiance" data-scroll="Experiance">Experiance</a></li>
+          <li><a href="#achievements" data-scroll="Achievements">Achievements</a></li>
+          <li><a href="#education" data-scroll="Education">Education</a></li>
+          <li><a href="#services" data-scroll="Services">Services</a></li>
+          <li><a href="#skills" data-scroll="Skills">Skills</a></li>
+          <li><a href="#projects" data-scroll="Projects">Projects</a></li>
+          <li><a href="#contact" data-scroll="Contact">Contact</a></li>
         </ul>
       </div>
     </div>
@@ -37,7 +34,7 @@
 
   <div class="menu">
     <div class="container">
-      <ul>
+      <ul class="resposive-menu">
         <a href="#home">
           <li>1. Home</li>
         </a>
@@ -138,20 +135,20 @@
           <h3>Experiance</h3>
         </div>
         <div class="year-wise-post-flex">
-          <div class="year-wise-experiace">
+          <div class="year-wise-experiace active-employer">
             <div class="company-logo">
               <img src="Image\aur(P)-logo.png" alt="">
-              <h4>BI Developer</h4>
+              <h4 class="post-of-year active-post">BI Developer</h4>
             </div>
-            <div class="work-detail-text">
-              <p class="working-period">Sep 2019 To Present</p>
-              <p>Write something about your work here</p>
+            <div class="work-detail-text active-year-text">
+              <p class="working-period active-year">Sep 2019 To Present</p>
+              <p class="about-active-company">Write something about your work here</p>
             </div>
           </div>
           <div class="year-wise-experiace">
             <div class="company-logo">
               <img src="Image\barclay(P)-logo.png" alt="">
-              <h4>Qlik / Full Stack Developer</h4>
+              <h4 class="post-of-year" >Qlik / Full Stack Developer</h4>
             </div>
             <div class="work-detail-text">
               <p class="working-period">Dec 2017 To Jul 2019</p>
@@ -163,7 +160,7 @@
           <div class="year-wise-experiace">
             <div class="company-logo">
               <img src="Image\LTI(P).png" alt="">
-              <h4>System Engineer </h4>
+              <h4 class="post-of-year">System Engineer </h4>
             </div>
             <div class="work-detail-text">
               <p class="working-period">Sep 2016 To Dec 2017</p>
@@ -173,7 +170,7 @@
           <div class="year-wise-experiace">
             <div class="company-logo">
               <img src="Image\infosys(P)-logo.png" alt="">
-              <h4>Sr. System Engineer</h4>
+              <h4 class="post-of-year">Sr. System Engineer</h4>
             </div>
             <div class="work-detail-text">
               <p class="working-period">Feb 2014 To Sep 2016</p>
@@ -217,7 +214,17 @@
                 <i class="fa fa-trophy" aria-hidden="true"></i>
               </div>
               <div class="award-text">
-                <p class="year-name">Nov-2015 & Jun 2016</p>
+                <p class="year-name">Jun 2016</p>
+                <p class="award-name">Insta Award</p>
+                <p class="univercity-name">Infosys Pvt. Ltd, India</p>
+              </div>
+            </div>
+            <div class="award-icon-text">
+              <div class="award-icon">
+                <i class="fa fa-trophy" aria-hidden="true"></i>
+              </div>
+              <div class="award-text">
+                <p class="year-name">Nov-2015</p>
                 <p class="award-name">Insta Award</p>
                 <p class="univercity-name">Infosys Pvt. Ltd, India</p>
               </div>
@@ -448,40 +455,44 @@
           <h3>Contact Me</h3>
         </div>
         <div class="address-detail">
-          <div class="address">
-            <div class="address-icon">
-              <a href="javascript:void(0);"><i class="fa fa-map-marker" aria-hidden="true"></i></a>
+          <div class="address-flex">
+            <div class="address">
+              <div class="address-icon">
+                <a href="javascript:void(0);"><i class="fa fa-map-marker" aria-hidden="true"></i></a>
+              </div>
+              <div class="address-text">
+                <h4>Address</h4>
+                <p>Melbourne Australia</p>
+              </div>
             </div>
-            <div class="address-text">
-              <h4>Address</h4>
-              <p>Melbourne Australia</p>
-            </div>
-          </div>
-          <div class="address">
-            <div class="address-icon">
-              <a href="javascript:void(0);"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-            </div>
-            <div class="address-text">
-              <h4>Linked-In</h4>
-              <p>Ask your quaries</p>
-            </div>
-          </div>
-          <div class="address">
-            <div class="address-icon">
-              <a href="javascript:void(0);"><i class="fa fa-twitter" area-hidden="true"></i></a>
-            </div>
-            <div class="address-text">
-              <h4>Email Address</h4>
-              <p>Write your Email Address here</p>
+            <div class="address">
+              <div class="address-icon">
+                <a href="javascript:void(0);"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+              </div>
+              <div class="address-text">
+                <h4>Linked-In</h4>
+                <p>Ask your quaries</p>
+              </div>
             </div>
           </div>
-          <div class="address">
-            <div class="address-icon">
-              <a href="javascript:void(0);"><i class="fa fa-globe" aria-hidden="true"></i></a>
+          <div class="address-flex">
+            <div class="address">
+              <div class="address-icon">
+                <a href="javascript:void(0);"><i class="fa fa-twitter" area-hidden="true"></i></a>
+              </div>
+              <div class="address-text">
+                <h4>Email Address</h4>
+                <p>Write your Email Address here</p>
+              </div>
             </div>
-            <div class="address-text">
-              <h4>WebSite</h4>
-              <p>Write your WebSite here</p>
+            <div class="address">
+              <div class="address-icon">
+                <a href="javascript:void(0);"><i class="fa fa-globe" aria-hidden="true"></i></a>
+              </div>
+              <div class="address-text">
+                <h4>WebSite</h4>
+                <p>Write your WebSite here</p>
+              </div>
             </div>
           </div>
         </div>
@@ -512,7 +523,13 @@
     </footer>
   </main>
 
+
+  
+  <script src="js\jquery-2.2.4.min.js" type="application/javascript"></script>
+  <script src="js\slick.min.js"></script> 
+  <script src="https://use.fontawesome.com/2fdcb6e8a9.js"></script>
   <script src="js\script.js" type="application/javascript"></script>
+  
 </body>
 
 </html>
