@@ -12887,7 +12887,7 @@ figcaption {
   stroke-width: 2;
   position: relative;
   z-index: 2;
-  width: 20px;
+  width: 30px;
 }
 
 .slide .social-share-inner-left .social-share li a:hover {
@@ -16019,7 +16019,7 @@ div#featured-project-carousel {
 
 .contact-about-area .social-area .social-icone a svg {
   stroke-width: 2;
-  width: 20px;
+  width: 30px;
   color: var(--color-lightn);
   -webkit-transition: var(--transition);
   transition: var(--transition);
@@ -19076,6 +19076,10 @@ body.white-version {
   color: var(--color-white);
 }
 
+.white-version .slide .social-share-inner-left .social-share li a.hover-icon:hover svg {
+  fill: var(--color-white);
+}
+
 .white-version .slide .skill-share-inner span.title {
   color: var(--color-heading-wv);
   font-weight: 500;
@@ -19760,6 +19764,10 @@ body.white-version {
 
 .white-version .rn-contact-area .contact-about-area .social-area .social-icone a:hover svg {
   color: var(--color-white);
+}
+
+.white-version .rn-contact-area .contact-about-area .social-area .social-icone a.hover-icon:hover svg {
+  fill: var(--color-white);
 }
 
 .white-version .rn-contact-area .contact-form-wrapper {

@@ -855,6 +855,13 @@ body.white-version {
                                 color: var(--color-white);
                             }
                         }
+                        &.hover-icon {
+                            &:hover {
+                                svg {
+                                    fill: var(--color-white);
+                                }
+                            } 
+                        }
                     }
                 }
             }
@@ -1678,6 +1685,14 @@ body.white-version {
                         &:hover {
                             svg {
                                 color: var(--color-white);
+                            }
+                        }
+
+                        &.hover-icon{
+                            &:hover {
+                                svg {
+                                    fill: var(--color-white);
+                                }
                             }
                         }
                     }
